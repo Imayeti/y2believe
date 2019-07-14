@@ -2,9 +2,8 @@ a {
   font-size: calc(14px + .2vw); }
 
 body {
-  background-color: #c1d0e4;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Arimo', sans-serif; }
+  font-family: 'Noto Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
@@ -80,5 +79,8 @@ button:active {
 
 .rml-6 {
   margin-left: calc(-20px + 5vw); }
+
+img {
+  width: 200px; }
 
 /*# sourceMappingURL=style.css.map */

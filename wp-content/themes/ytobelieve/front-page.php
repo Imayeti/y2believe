@@ -17,9 +17,9 @@ get_header();
 
 
 
-hello friends
+<h5 class="ml-5 mt-5">Y2Believe</h5>
 
-
+<img src="/wp-content/uploads/2019/07/y2logo.jpg" alt="">
 <?php
 
 get_footer();
