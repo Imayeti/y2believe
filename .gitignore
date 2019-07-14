@@ -1,0 +1,17 @@
+.node_modules/
+.DS_Store
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+
+wp-content/plugins/wordfence/*
+wp-content/plugins/wp-migrate-db/*
+**/.sass-cache
+**/.sass-cache/*
+**.css.map
+settings.js
+sitemap.*
+wp-config.php
+*[Tt]humbs.db
+*.Trashes
+.htaccess
