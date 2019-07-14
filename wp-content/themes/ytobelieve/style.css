@@ -1,0 +1,84 @@
+a {
+  font-size: calc(14px + .2vw); }
+
+body {
+  background-color: #c1d0e4;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Arimo', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 3px;
+  margin: 0; }
+
+p {
+  font-size: calc(14px + .2vw);
+  margin: 0;
+  line-height: 1.8; }
+
+h1 {
+  font-size: calc(24px + 2vw);
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: calc(23px + .6vw);
+  letter-spacing: 4px; }
+
+h3 {
+  font-size: calc(21px + .4vw); }
+
+h5 {
+  font-size: calc(12px + .6vw); }
+
+h6 {
+  font-size: calc(16px + .2vw); }
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
+button:focus {
+  outline: 0 !important; }
+
+button:active {
+  outline: none;
+  border: none; }
+
+.rmt-1 {
+  margin-top: calc(3px + .4vw); }
+
+.rmt-2 {
+  margin-top: calc(5px + .8vw); }
+
+.rmt-3 {
+  margin-top: calc(15px + 1.3vw); }
+
+.rmt-4 {
+  margin-top: calc(15px + 1.8vw); }
+
+.rmt-5 {
+  margin-top: calc(25px + 3vw); }
+
+.rmb-1 {
+  margin-bottom: calc(5px + .5vw); }
+
+.rmb-2 {
+  margin-bottom: calc(10px + .8vw); }
+
+.rmb-3 {
+  margin-bottom: calc(10px + 1vw); }
+
+.rmb-4 {
+  margin-bottom: calc(15px + 1.5vw); }
+
+.rmb-5 {
+  margin-bottom: calc(25px + 1.8vw); }
+
+.rml-6 {
+  margin-left: calc(-20px + 5vw); }
+
+/*# sourceMappingURL=style.css.map */
