@@ -1,35 +1,48 @@
-
+$sans:  'Yantramanav', sans-serif;
 // $sans:  'Nunito Sans', sans-serif;
 // $serif:  'Playfair Display', serif;
 // $gold-text: #bb8d2c;
 $ease:  all ease .3s;
+$red: #a61832;
+$blue: #305683;
+$lightBlue: #7d96b4;
 
 // placeholders placeholders placeholders placeholders
 
+%header {
+  // background-color: grey;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  // background-position: center center;
+  padding: calc(10px + .5vw);
+  background-repeat: no-repeat;
+}
 
 // placeholders end placeholders placeholders placeholders end end
 
 a {
   font-size: calc(14px + .2vw);
-
+  font-family: $sans;
 }
 
 body {
 
   -webkit-font-smoothing: antialiased;
-font-family: 'Noto Sans', sans-serif;
 
+font-family: $sans;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
   letter-spacing: 3px;
   margin: 0;
 }
 p {
   font-size: calc(14px + .2vw);
   margin: 0;
-
+font-family: $sans;
   line-height: 1.8;
 
 }
@@ -107,4 +120,345 @@ button:active {
 
 img {
   width: 200px;
+}
+
+
+// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
+
+//arrow bounce
+
+
+
+.fa-chevron-down {
+  transition: $ease;
+  color: white;
+  align-self: flex-end;
+  &:hover {
+    text-decoration: none;
+    color: $red;
+  }
+
+}
+
+.arrow {
+  text-align: center;
+  text-decoration: none;
+
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+//arrow end
+
+footer {
+  margin-top: 200px;
+  background-color: $blue;
+  height: 50vh;
+
+  color: white;
+}
+
+
+.header-home {
+  @extend %header;
+  position: relative;
+  img {
+    display: block;
+    width: calc(100px + 3vw);
+  }
+  h1 {
+
+    display: inline-block;
+    margin: 25vh auto;
+    padding: 0 10px;
+    border: 3px solid white;
+    color: rgba(255,255,255,.9) !important;
+
+    font-family: $sans;
+    font-weight: bold;
+    letter-spacing: 3.5px;
+    font-size: calc(30px + 2.5vw);
+  }
+}
+
+#arrows {
+    padding: calc(40px + 5vw);
+  img {
+    width: calc(100px + 10vw);
+  }
+  .right-arrow {
+    align-self: flex-end;
+  }
+  .left-arrow {
+
+  }
+  .flip-words {
+    padding: calc(10px + 1vw) calc(30px + 4vw);
+  }
+}
+
+
+
+#testimonials {
+  border-bottom: calc(10px + .5vw) solid $blue;
+  border-top: calc(10px + .5vw) solid $blue;
+  .testimonial-pic {
+
+    background-size: cover;
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: calc(20px + 8vw) calc(40px + 10vw) ;
+
+  }
+
+}
+
+
+
+
+
+
+
+.menuLink1, .menuLink2, .menuLink3, .menuLink4 {
+ display: none;
+}
+
+
+.sidenav {
+  outline: 10px solid $lightBlue;
+  white-space: nowrap;
+    height: 100%; /* 100% Full-height */
+    width: 00px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: -10px;
+    background-color: $blue;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	z-index: 9999;
+
+
+}
+
+/* The navigation menu links */
+
+.sidenav .main-links a {
+    padding: calc(5px + 2vh);
+    text-decoration: none;
+    font-size: calc(5px + 1.6vh);
+
+	font-weight:200;
+
+    color: #f5f5f5;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+	transform: 0.3s ease all;
+	// border-bottom: 1px solid $lightBlue;
+  min-width: 300px;
+  cursor: pointer !important;
+}
+
+.sidnav .main-links a:hover {background-color: $lightBlue; cursor: pointer !important;}
+
+.sidenav .main-links a:nth-child(1) {
+  // border-top:1px solid $lightBlue;
+display:block;
+ margin-top: calc(3px + 8vh);
+}
+
+.col-content-padding {
+  padding-left: 60px;
+  /* padding-left: 60px; */
+}
+.row-content-padding {
+  /* max-width: 1200px; */
+
+}
+.row-content-padding-process{
+  z-index: 999;
+  padding-right: calc(30px + 30vw);
+  padding-bottom: calc(100px + 1vw);
+}
+
+/* .hamburger {   height: calc(50px + 2.5vw);
+   width: calc(50px + 3vw); } */
+
+
+
+.hamburger
+{
+
+
+    padding: calc(5px + 1.5vw) calc(5px + .5vw) calc(5px + .5vw) calc(3px + .3vw);
+  position:fixed;
+  top: 0;
+  right: 0;
+  z-index:1099;
+  background-color: rgba(48, 86, 131, .35);
+  height: calc(40px + 3.5vw);
+   width: calc(50px + 4.5vw);
+  transition: all ease .5s;
+  /* border-left: 15px solid rgba(36,40,33,0.5); */
+  /* border-bottom: 15px solid rgba(36,40,33,0.5); */
+  display: table;
+  overflow: hidden;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+
+
+.social-media-icons:hover {
+  margin-top: -5px;
+  transition: all ease .3s;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .main-links a:hover, .offcanvas a:focus {
+    color: #e1e1e1; letter-spacing: .05em; background-color: $lightBlue;
+    transition: all ease .3s; cursor: pointer;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+	   padding: 20px;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+	   color: #d8a684;
+	    background: transparent !important;
+}
+
+
+.outer {
+  position: relative;
+  width: 25px;
+	top: 0px;
+	right: 10px;
+  cursor: pointer !important;
+	  height: 25px;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+.outer:hover .inner:after {
+  transition: all ease .3s;
+  transform: rotate(45deg);
+	background: $lightBlue;
+}
+
+.outer:hover .inner:before {
+  transition: all ease .3s;
+  transform: rotate(-45deg);
+	background: $lightBlue;
+}
+
+.inner:before, .inner:after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: inherit;
+  background: $lightBlue;
+  left: 0;
+  transition: all .3s ease-in;
+	top:10px;
+}
+
+.inner:before {
+
+  transform: rotate(45deg);
+}
+
+.inner:after {
+
+  transform: rotate(-45deg);
+}
+
+#hamburger path {
+  transition: all ease .5s;
+
+}
+
+#hamburger:hover path.top  {
+
+
+transform: translate(100px, 0);
+
+}
+#hamburger:hover path.bottom  {
+
+
+transform: translate(100px, 0);
+transition-delay:.2s;
+}
+#hamburger:hover path.middle {
+  transform: translate(100px, 0);
+  transition-delay:.1s;
+
+}
+
+
+/* End of all side bar style and side bar button styles */
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: rgba(255, 255, 255, .5);
+font-family: "Khula" !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ color: rgba(255, 255, 255, .5);
+font-family: "Khula" !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+ color: rgba(255, 255, 255, .5);
+font-family: "Khula" !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+ color: rgba(255, 255, 255, .5);
+font-family: "Khula" !important;
+}
+
+//MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES
+
+@media (max-width: 1200px) {
+  .header-home {
+
+    background-attachment: scroll;
+    background-position: -200px;
+  }
+  #testimonials {
+    .testimonial-pic {
+      background-attachment: scroll;
+      padding: 20px;
+    }
+
+  }
+
+
 }

@@ -142,7 +142,7 @@ wp_enqueue_style('', '');
 wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
 
 
-wp_enqueue_style( 'ytobelieve-style', get_stylesheet_uri() );
+wp_enqueue_style( 'ytobelieve-style', get_stylesheet_uri(), NULL, microtime() );
 
 
 
