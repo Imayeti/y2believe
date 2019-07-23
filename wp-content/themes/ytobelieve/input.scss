@@ -193,7 +193,7 @@ footer {
     font-family: $sans;
     font-weight: bold;
     letter-spacing: 3.5px;
-    font-size: calc(30px + 2.5vw);
+    font-size: calc(20px + 2vw);
   }
 }
 
@@ -216,8 +216,8 @@ footer {
 
 
 #testimonials {
-  border-bottom: calc(10px + .5vw) solid $blue;
-  border-top: calc(10px + .5vw) solid $blue;
+  border-bottom: calc(8px + .35vw) solid $blue;
+  border-top: calc(8px + .35vw) solid $blue;
   .testimonial-pic {
 
     background-size: cover;

@@ -18,7 +18,7 @@ get_header();
   <img src="/wp-content/uploads/2019/07/logoy2b.png" alt="">
 
   <h1 data-aos="fade-in"
-data-aos-duration="2000" class="text-white " >Y2Believe <br>Lorem Ipsum </h1>
+data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth </h1>
 
 
 <div class="arrow bounce">

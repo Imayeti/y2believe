@@ -137,7 +137,7 @@ footer {
     font-family: "Yantramanav", sans-serif;
     font-weight: bold;
     letter-spacing: 3.5px;
-    font-size: calc(30px + 2.5vw); }
+    font-size: calc(20px + 2vw); }
 
 #arrows {
   padding: calc(40px + 5vw); }
@@ -149,8 +149,8 @@ footer {
     padding: calc(10px + 1vw) calc(30px + 4vw); }
 
 #testimonials {
-  border-bottom: calc(10px + .5vw) solid #305683;
-  border-top: calc(10px + .5vw) solid #305683; }
+  border-bottom: calc(8px + .35vw) solid #305683;
+  border-top: calc(8px + .35vw) solid #305683; }
   #testimonials .testimonial-pic {
     background-size: cover;
     min-height: 50vh;
