@@ -34,10 +34,10 @@
 	    </div></a>
 	     <div class="main-links">
 
-			<a href="#about" rel="m_PageScroll2id" onclick="closeNav();ga('send', 'event', 'About', 'click', 'Menu Link');" style=""><span class="menuLink1">About Us</span></a>
-			<a href="#testimonials" rel="m_PageScroll2id" onclick="closeNav();ga('send', 'event', 'Testimonials', 'click', 'Menu Link');"><span class="menuLink2">Partner</span></a>
-			<a href="#contact" rel="m_PageScroll2id" onclick="closeNav();ga('send', 'event', 'Success', 'click', 'Menu Link4');"><span class="menuLink3"><span class="menuLink1">Process</span></a>
-			 <a href="#donate" rel="m_PageScroll2id" onclick="closeNav();ga('send', 'event', 'donate', 'click', 'Menu Link5');"><span class="menuLink4">Evidence</span></a>
+			<a href="#about" rel="m_PageScroll2id" onclick="closeNav()" style=""><span class="menuLink1">About Us</span></a>
+			<a href="#testimonials" rel="m_PageScroll2id" onclick="closeNav();"><span class="menuLink2">Partner</span></a>
+			<a href="#contact" rel="m_PageScroll2id" onclick="closeNav();"><span class="menuLink3"><span class="menuLink1">Process</span></a>
+			 <a href="#donate" rel="m_PageScroll2id" onclick="closeNav();"><span class="menuLink4">Evidence</span></a>
 
 
 
