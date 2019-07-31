@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "320px";
+    document.getElementById("mySidenav").style.width = "200px";
 
 // document.getElementById("overlay").style.opacity = "1";
 // document.getElementById("overlay").style.width = "100vw";

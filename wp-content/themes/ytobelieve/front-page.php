@@ -15,7 +15,7 @@
 get_header();
 ?>
 <header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-worship-at-ThriveV3.jpg')">
-  <img src="/wp-content/uploads/2019/07/logoy2b.png" alt="">
+  <img class="logo" src="/wp-content/uploads/2019/07/Y2B-logo-full.png" alt="">
 
   <h1 data-aos="fade-in"
 data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth </h1>
@@ -28,12 +28,12 @@ data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth 
 </header>
 
 <section id="arrows">
-   <div class="row">
+   <div class="row no-gutters">
 
-    <div class="col-12 col-md-6  order-md-2 right-arrow">
+    <div class="col-12 col-md-6  order-md-2 right-arrow ">
       <img  class="" data-aos="fade-left"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/rightarrow.jpg" alt="">
+    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/redarrow.png" alt="">
     </div>
     <div data-aos-once="true"  data-aos-delay="1000"  data-aos="fade-in"
     data-aos-easing="ease-out-cubic"
@@ -44,11 +44,17 @@ data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth 
 
    </div>
   </div>
-   <div class="row">
-    <div class="col-12 col-md-6">
-      <img  class="left-arrow float-right" data-aos="fade-right"
+   <div class="row no-gutters">
+    <div class="col-12 col-md-6 ">
+      <img  class="left-arrow float-right mobile-no-show" data-aos="fade-right"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/leftarrow.jpg" alt="">
+    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/bluearrow.png" alt="">
+
+    </div>
+    <div class="col-12 col-md-6 mobile-show">
+      <img  class="left-arrow float-right " data-aos="fade-right"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/mobilebluearrow.png" alt="">
 
     </div>
     <div  data-aos-once="true" data-aos-delay="1300" data-aos="fade-in"

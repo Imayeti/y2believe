@@ -36,7 +36,7 @@ h3 {
   font-size: calc(21px + .4vw); }
 
 h5 {
-  font-size: calc(12px + .6vw); }
+  font-size: calc(14px + .6vw); }
 
 h6 {
   font-size: calc(16px + .2vw); }
@@ -118,16 +118,16 @@ img {
   60% {
     transform: translateY(-15px); } }
 footer {
+  padding: calc(20px + 2vw) calc(30px + 5vw);
   margin-top: 200px;
-  background-color: #305683;
-  height: 50vh;
+  background-color: #0d1a23;
   color: white; }
 
 .header-home {
   position: relative; }
-  .header-home img {
+  .header-home .logo {
     display: block;
-    width: calc(100px + 3vw); }
+    width: calc(50px + 1vw); }
   .header-home h1 {
     display: inline-block;
     margin: 25vh auto;
@@ -140,13 +140,13 @@ footer {
     font-size: calc(20px + 2vw); }
 
 #arrows {
-  padding: calc(40px + 5vw); }
+  padding: calc(20px + 5vw); }
   #arrows img {
     width: calc(100px + 10vw); }
   #arrows .right-arrow {
     align-self: flex-end; }
   #arrows .flip-words {
-    padding: calc(10px + 1vw) calc(30px + 4vw); }
+    padding: calc(10px + 1vw) calc(30px + 1vw); }
 
 #testimonials {
   border-bottom: calc(8px + .35vw) solid #305683;
@@ -312,6 +312,9 @@ footer {
   transform: translate(100px, 0);
   transition-delay: .1s; }
 
+.mobile-show {
+  display: none; }
+
 /* End of all side bar style and side bar button styles */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -341,5 +344,11 @@ footer {
   #testimonials .testimonial-pic {
     background-attachment: scroll;
     padding: 20px; } }
+@media (max-width: 768px) {
+  .mobile-no-show {
+    display: none; }
+
+  .mobile-show {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

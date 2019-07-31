@@ -60,7 +60,7 @@ h2 {
 
 h3 {font-size: calc(21px + .4vw); }
 
-h5 {font-size: calc(12px + .6vw)}
+h5 {font-size: calc(14px + .6vw)}
 
 h6 {
   font-size: calc(16px + .2vw);
@@ -167,9 +167,9 @@ img {
 //arrow end
 
 footer {
+  padding: calc(20px + 2vw) calc(30px + 5vw);
   margin-top: 200px;
-  background-color: $blue;
-  height: 50vh;
+  background-color:#0d1a23;
 
   color: white;
 }
@@ -178,9 +178,9 @@ footer {
 .header-home {
   @extend %header;
   position: relative;
-  img {
+  .logo {
     display: block;
-    width: calc(100px + 3vw);
+    width: calc(50px + 1vw);
   }
   h1 {
 
@@ -198,7 +198,7 @@ footer {
 }
 
 #arrows {
-    padding: calc(40px + 5vw);
+    padding: calc(20px + 5vw);
   img {
     width: calc(100px + 10vw);
   }
@@ -209,7 +209,7 @@ footer {
 
   }
   .flip-words {
-    padding: calc(10px + 1vw) calc(30px + 4vw);
+    padding: calc(10px + 1vw) calc(30px + 1vw);
   }
 }
 
@@ -423,6 +423,9 @@ transition-delay:.2s;
 
 }
 
+.mobile-show {
+  display: none;
+}
 
 /* End of all side bar style and side bar button styles */
 
@@ -462,3 +465,25 @@ font-family: "Khula" !important;
 
 
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+  .mobile-no-show {
+    display: none;
+  }
+
+   .mobile-show {
+     display: block;
+   }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { }
