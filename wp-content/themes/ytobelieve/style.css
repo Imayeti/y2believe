@@ -127,7 +127,7 @@ footer {
   position: relative; }
   .header-home .logo {
     display: block;
-    width: calc(50px + 1vw); }
+    width: calc(40px + 2vw); }
   .header-home h1 {
     display: inline-block;
     margin: 25vh auto;
