@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
 
 
-	<div id="mySidenav" class="sidenav" >
+	<!-- <div id="mySidenav" class="sidenav" >
 	      <a href="javascript:void(0)" class="closebtn circle boxShadow" onclick="closeNav();ga('send', 'event', 'Close', 'click', 'Menu');"><div class="outer">
 	      <div class="inner">
 
@@ -76,4 +76,29 @@
         		c1.89-1.66,2.83-4.36,2.83-8.09c0-3.73-0.96-6.43-2.87-8.09c-1.91-1.66-4.95-2.49-9.1-2.49H42.16z"/>
         </g>
         </svg>
-			</div>
+			</div> -->
+			<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+
+
+
+
+			<nav id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+
+
+
+					<li>
+						<a href="#" title="Go to about us">About Us</a>
+					</li>
+					<li>
+						<a href="#" title="Go to partner section">Partner</a>
+					</li>
+					<li>
+						<a href="#" title="process">Process</a>
+					</li>
+					<li>
+						<a href="#" title="evidence">Evidence</a>
+					</li>
+
+				</ul>
+			</nav>
