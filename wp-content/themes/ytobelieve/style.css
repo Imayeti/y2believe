@@ -1,6 +1,6 @@
 .header-home {
   background-size: cover;
-  height: 70vh;
+  min-height: 100vh;
   background-attachment: fixed;
   padding: calc(10px + .5vw);
   background-repeat: no-repeat; }
@@ -124,14 +124,13 @@ footer {
   color: white; }
 
 .header-home {
-  height: 50vh;
   position: relative; }
   .header-home .logo {
     display: block;
     width: calc(40px + 2vw); }
   .header-home h1 {
     display: inline-block;
-    margin: 5vh auto;
+    margin: 25vh auto;
     padding: 0 10px;
     border: 3px solid white;
     color: rgba(255, 255, 255, 0.9) !important;

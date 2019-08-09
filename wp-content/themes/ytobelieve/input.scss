@@ -12,7 +12,7 @@ $lightBlue: #7d96b4;
 %header {
   // background-color: grey;
   background-size: cover;
-  height: 70vh;
+  min-height: 100vh;
   background-attachment: fixed;
   // background-position: center center;
   padding: calc(10px + .5vw);
@@ -177,7 +177,6 @@ footer {
 
 .header-home {
   @extend %header;
-  height: 50vh;
   position: relative;
   .logo {
     display: block;
@@ -186,7 +185,7 @@ footer {
   h1 {
 
     display: inline-block;
-    margin: 5vh auto;
+    margin: 25vh auto;
     padding: 0 10px;
     border: 3px solid white;
     color: rgba(255,255,255,.9) !important;
