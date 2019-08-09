@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-worship-at-ThriveV3.jpg')">
+<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/08/Prayer-tent-opening-v2.jpg')">
   <img class="logo" src="/wp-content/uploads/2019/07/Y2B-logo-full.png" alt="">
 
   <h1 data-aos="fade-in"
@@ -71,7 +71,7 @@ data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth 
 
 
 <section id="testimonials">
-  <div class="testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-openingV4.jpg')">
+  <div class="testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2019/08/Tyler-students-sitting-on-floor-v2.jpg')">
     <?php echo do_shortcode('[testimonial_rotator id=21]') ;?>
   </div>
 </section>

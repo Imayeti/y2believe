@@ -1,6 +1,6 @@
 .header-home {
   background-size: cover;
-  min-height: 100vh;
+  height: 70vh;
   background-attachment: fixed;
   padding: calc(10px + .5vw);
   background-repeat: no-repeat; }
@@ -124,13 +124,14 @@ footer {
   color: white; }
 
 .header-home {
+  height: 50vh;
   position: relative; }
   .header-home .logo {
     display: block;
     width: calc(40px + 2vw); }
   .header-home h1 {
     display: inline-block;
-    margin: 25vh auto;
+    margin: 5vh auto;
     padding: 0 10px;
     border: 3px solid white;
     color: rgba(255, 255, 255, 0.9) !important;
@@ -148,15 +149,12 @@ footer {
   #arrows .flip-words {
     padding: calc(10px + 1vw) calc(30px + 1vw); }
 
-#testimonials {
-  border-bottom: calc(8px + .35vw) solid #305683;
-  border-top: calc(8px + .35vw) solid #305683; }
-  #testimonials .testimonial-pic {
-    background-size: cover;
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center center;
-    padding: calc(20px + 8vw) calc(40px + 10vw); }
+#testimonials .testimonial-pic {
+  background-size: cover;
+  min-height: 50vh;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: calc(20px + 8vw) calc(40px + 10vw); }
 
 #sidebar-wrapper {
   z-index: 1000;
@@ -174,6 +172,7 @@ footer {
   transition: all 0.4s ease-in-out 0s; }
 
 .sidebar-nav {
+  padding-top: calc(10px + .5vw);
   position: absolute;
   top: 0;
   width: 250px;
@@ -189,7 +188,8 @@ footer {
   font-size: 110%;
   font-weight: 800;
   text-transform: uppercase;
-  outline: none; }
+  outline: none;
+  margin: calc(5px + .4vw) auto; }
 
 .sidebar-nav li:before {
   content: '';
@@ -198,12 +198,15 @@ footer {
   right: 0;
   z-index: -1;
   height: 100%;
-  width: 3px;
+  width: 0px;
   background-color: #1c1c1c;
   -webkit-transition: width .4s ease-in-out;
   -moz-transition: width .4s ease-in-out;
   -ms-transition: width .4s ease-in-out;
   transition: width .4s ease-in-out; }
+
+#first-li {
+  margin-top: calc(50px + 3vw); }
 
 .sidebar-nav li:first-child a {
   color: #fff;
@@ -220,7 +223,7 @@ footer {
   background-color: #7d96b4; }
 
 .sidebar-nav li:nth-child(5):before {
-  background-color: #305683; }
+  background-color: #7d96b4; }
 
 .sidebar-nav li:nth-child(6):before {
   background-color: #305683; }
@@ -255,26 +258,20 @@ footer {
   text-decoration: none;
   background-color: transparent; }
 
-.sidebar-nav > .sidebar-brand {
-  height: 44px;
-  font-size: 18px;
-  line-height: 1.43; }
-
-.sidebar-nav .dropdown-menu {
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  border: none;
-  background-color: #222;
-  box-shadow: none; }
-
 #menu-toggle {
   z-index: 801;
   position: fixed;
   top: 0;
   right: 15px; }
+  #menu-toggle svg {
+    padding: calc(3px + .8vw) calc(3px + .3vw) calc(3px + .3vw) calc(3px + .3vw);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1099;
+    background-color: rgba(48, 86, 131, 0.35);
+    height: calc(40px + 3.5vw);
+    width: calc(50px + 4.5vw); }
 
 #sidebar-wrapper.active {
   right: 250px;
@@ -286,13 +283,7 @@ footer {
   transition: all 0.4s ease 0s; }
 
 .toggle {
-  margin: 5px 5px 0 0; }
-
-#to-top {
-  position: fixed;
-  right: 1.5%;
-  bottom: .5%;
-  z-index: 799; }
+  margin: calc(10px + .5vw); }
 
 .menuLink1, .menuLink2, .menuLink3, .menuLink4 {
   display: none; }
@@ -386,7 +377,7 @@ footer {
   cursor: pointer; }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.closebtn {
   position: absolute;
   top: 5px;
   padding: 20px;
@@ -472,6 +463,9 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Khula" !important; }
 
+@media (min-width: 1200px) {
+  #menu-close {
+    display: none; } }
 @media (max-width: 1200px) {
   .header-home {
     background-attachment: scroll;

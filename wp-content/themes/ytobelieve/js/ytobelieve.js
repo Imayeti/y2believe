@@ -70,58 +70,9 @@ $(document).ready(function()
 																// - see: ('//api.jquery.com/event.preventDefault/' for details)
 	});
 });
-/*!
 
 
-Simply:
 
-	a[href*=#]
-
-		* get all anchors (a) that contains # in href but with:
-
-	:not([href=#])
-
-		* exclude anchors with href exaclty equals to #
-
-example:
-
-	<a href="#step1">yes</a>
-	<a href="page.php#step2">yes</a>
-	<a href="#">no</a>
-
-		* the selectors get first two anchor but it exclude the last
-		source: http://stackoverflow.com/questions/20947529/what-does-ahref-nothref-code-mean
-
-*/
-
-$(document).ready(function()
-{
-    /* smooth scrolling for scroll to top */
-	$('#to-top').bind('click', function()
-	{
-		$('body,html').animate({
-			scrollTop: 0},
-			2500);
-	});
-
-	//Easing Scroll replace Anchor name in URL and Offset Position
-	$(function(){
-		$('a[href*=#]:not([href=#])').click(function()
-		{
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top -420
-					}, 3500, 'easeOutBounce');
-					return false;
-				}
-			}
-		});
-	});
-});
 
 
 

@@ -12,7 +12,7 @@ $lightBlue: #7d96b4;
 %header {
   // background-color: grey;
   background-size: cover;
-  min-height: 100vh;
+  height: 70vh;
   background-attachment: fixed;
   // background-position: center center;
   padding: calc(10px + .5vw);
@@ -177,6 +177,7 @@ footer {
 
 .header-home {
   @extend %header;
+  height: 50vh;
   position: relative;
   .logo {
     display: block;
@@ -185,7 +186,7 @@ footer {
   h1 {
 
     display: inline-block;
-    margin: 25vh auto;
+    margin: 5vh auto;
     padding: 0 10px;
     border: 3px solid white;
     color: rgba(255,255,255,.9) !important;
@@ -216,8 +217,8 @@ footer {
 
 
 #testimonials {
-  border-bottom: calc(8px + .35vw) solid $blue;
-  border-top: calc(8px + .35vw) solid $blue;
+  // border-bottom: calc(8px + .35vw) solid $blue;
+  // border-top: calc(8px + .35vw) solid $blue;
   .testimonial-pic {
 
     background-size: cover;
@@ -248,9 +249,6 @@ footer {
 
 
 
-@charset "utf-8";
-
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -267,6 +265,8 @@ footer {
     transition: all 0.4s ease-in-out 0s;
 }
 .sidebar-nav {
+  padding-top: calc(10px + .5vw);
+
     position: absolute;
     top: 0;
     width: 250px;
@@ -283,6 +283,8 @@ footer {
     font-weight: 800;
     text-transform: uppercase;
     outline: none;
+    margin: calc(5px + .4vw) auto;
+
 }
 .sidebar-nav li:before {
     content: '';
@@ -291,12 +293,15 @@ footer {
     right: 0;
     z-index: -1;
     height: 100%;
-    width: 3px;
+    width: 0px;
     background-color: #1c1c1c;
     -webkit-transition: width .4s ease-in-out;
     -moz-transition: width .4s ease-in-out;
     -ms-transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
+}
+#first-li {
+  margin-top: calc(50px + 3vw);
 }
 .sidebar-nav li:first-child a {
     color: #fff;
@@ -313,7 +318,7 @@ footer {
     background-color: $lightBlue;
 }
 .sidebar-nav li:nth-child(5):before {
-    background-color: $blue;
+    background-color: $lightBlue;
 }
 .sidebar-nav li:nth-child(6):before {
     background-color: $blue;
@@ -349,22 +354,35 @@ footer {
     text-decoration: none;
     background-color: transparent;
 }
-.sidebar-nav > .sidebar-brand {
-    height: 44px;
-    font-size: 18px;
-    line-height: 1.43;
-}
-.sidebar-nav .dropdown-menu {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    border: none;
-    background-color: #222;
-    box-shadow: none;
-}
+// .sidebar-nav > .sidebar-brand {
+//     height: 44px;
+//     font-size: 18px;
+//     line-height: 1.43;
+// }
+// .sidebar-nav .dropdown-menu {
+//     position: relative;
+//     width: 100%;
+//     padding: 0;
+//     margin: 0;
+//     border-radius: 0;
+//     border: none;
+//     background-color: #222;
+//     box-shadow: none;
+// }
 #menu-toggle {
+
+
+    svg {
+      padding: calc(3px + .8vw) calc(3px + .3vw) calc(3px + .3vw) calc(3px + .3vw);
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index:1099;
+    background-color: rgba(48, 86, 131, .35);
+    height: calc(40px + 3.5vw);
+     width: calc(50px + 4.5vw);
+
+    }
     z-index: 801;
     position: fixed;
     top: 0;
@@ -380,14 +398,9 @@ footer {
     transition: all 0.4s ease 0s;
 }
 .toggle {
-    margin: 5px 5px 0 0;
+    margin: calc(10px + .5vw);
 }
-#to-top {
-    position: fixed;
-    right: 1.5%;
-    bottom: .5%;
-    z-index: 799;
-}
+
 
 
 
@@ -513,7 +526,7 @@ display:block;
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.closebtn {
     position: absolute;
     top: 5px;
 	   padding: 20px;
@@ -619,8 +632,13 @@ font-family: "Khula" !important;
 }
 
 //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES
-
+@media (min-width: 1200px) {
+  #menu-close {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
+
   .header-home {
 
     background-attachment: scroll;
