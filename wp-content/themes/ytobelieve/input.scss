@@ -126,8 +126,33 @@ img {
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
 //arrow bounce
+//
+.sans {
+  font-family: $sans;
+}
+.marker-popup {
+  img {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+#bodyContent {
+  max-width: 300px;
+}
+#map {
+  height: 50vh;
+  width: 100%;
+}
 
+.header-image {
+  padding: calc(10px + .5vw);
+  margin: calc(10px + .5vw);
+}
 
+header {
+  // padding: calc(10px + .5vw);
+  // margin: calc(20px + 7.5vw);
+}
 
 .fa-chevron-down {
   transition: $ease;
@@ -179,8 +204,10 @@ footer {
   @extend %header;
   position: relative;
   .logo {
-    display: block;
-    width: calc(40px + 2vw);
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: calc(55px + 2.9vw);
   }
   h1 {
 
@@ -256,7 +283,7 @@ footer {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: $blue;
+    background: rgba(48, 86, 131, .6);
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     -ms-transition: all 0.4s ease-in-out 0s;
@@ -304,35 +331,35 @@ footer {
 }
 .sidebar-nav li:first-child a {
     color: #fff;
-    background-color: $lightBlue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(2):before {
     color: #fff;
-    background-color: $lightBlue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(3):before {
-    background-color: $lightBlue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(4):before {
-    background-color: $lightBlue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(5):before {
-    background-color: $lightBlue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(6):before {
-    background-color: $blue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(7):before {
-    background-color: $blue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(8):before {
-    background-color: $blue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(9):before {
-    background-color: $blue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 .sidebar-nav li:nth-child(10):before {
-    background-color: $blue;
+    background-color: rgba( 125, 150, 180, .9);
 }
 
 .sidebar-nav li:hover:before, .sidebar-nav li.open:hover:before {
@@ -344,7 +371,7 @@ footer {
 }
 .sidebar-nav li a {
     display: block;
-    color: #ddd;
+    color: white;
     text-decoration: none;
     padding:  calc(10px + .5vw);
 }
@@ -377,7 +404,7 @@ footer {
     top: 0;
     right: 0;
     z-index:1099;
-    background-color: rgba(48, 86, 131, .35);
+    background-color: rgba(48, 86, 131, .45);
     height: calc(40px + 3.5vw);
      width: calc(50px + 4.5vw);
 

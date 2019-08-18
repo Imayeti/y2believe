@@ -14,6 +14,7 @@ $(".menuLink4").fadeIn(2200);
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+
     $(".menuLink4").fadeOut();
     $(".menuLink3").fadeOut();
     $(".menuLink2").fadeOut();
@@ -32,6 +33,8 @@ $(document).ready(function()
 	// Closes the sidebar menu on menu-close button click event
 	$("#menu-close").click(function(e)							//declare the element event ...'(e)' = event (shorthand)
 	{
+    $('#menu-toggle').stop().fadeIn(1000);
+    
 																// - will not work otherwise")
 		$("#sidebar-wrapper").toggleClass("active");			//instead on click event toggle active CSS element
 		e.preventDefault(); 									//prevent the default action ("Do not remove as the code
@@ -46,6 +49,7 @@ $(document).ready(function()
 	// Open the Sidebar-wrapper on Hover
 	$("#menu-toggle").hover(function(e)							//declare the element event ...'(e)' = event (shorthand)
 	{
+      $('#menu-toggle').stop().fadeOut(100);
 		$("#sidebar-wrapper").toggleClass("active",true);		//instead on click event toggle active CSS element
 		e.preventDefault();										//prevent the default action ("Do not remove as the code
 	});
@@ -59,6 +63,7 @@ $(document).ready(function()
 	$('#sidebar-wrapper').mouseleave(function(e)				//declare the jQuery: mouseleave() event
 																// - see: ('//api.jquery.com/mouseleave/' for details)
 	{
+      $('#menu-toggle').stop().fadeIn(1000);
 		/*! .toggleClass( className, state ) */
 		$('#sidebar-wrapper').toggleClass('active',false);		/* toggleClass: Add or remove one or more classes from each element
 																in the set of matched elements, depending on either the class's
