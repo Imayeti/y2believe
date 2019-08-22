@@ -11,18 +11,12 @@
 
 ?>
 <footer>
-
- <div class="row">
-  <div class="col-12 col-md-6">
-
-    <p>Contact Info</p>
-    <p>(333)333-3333</p>
-    <p>email@gmail.com</p>
-  </div>
-  <div class="col-12 col-md-6">
+   <div class="text-center info">
+     <p>Contact</p>
+     <p><a href="tel:334-569-6026">334-569-6026</a></p>
+     <p><a href="mailto:mbossman@y2believe.org">mbossman@y2believe.org</a></p>
 
   </div>
-</div>
 </footer>
 
 

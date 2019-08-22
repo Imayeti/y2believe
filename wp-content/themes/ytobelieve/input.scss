@@ -145,8 +145,15 @@ img {
 }
 
 .header-image {
-  padding: calc(10px + .5vw);
-  margin: calc(10px + .5vw);
+  // padding: calc(10px + .5vw);
+  // margin: calc(10px + .5vw);
+  .logo {
+    z-index: 2147483638;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: calc(55px + 2.9vw);
+  }
 }
 
 header {
@@ -196,19 +203,25 @@ footer {
   margin-top: 200px;
   background-color:#0d1a23;
 
-  color: white;
+  color: grey;
+  a {
+    transition: $ease;
+    color: grey;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  p {
+    line-height: 1.2;
+  }
 }
 
 
 .header-home {
   @extend %header;
   position: relative;
-  .logo {
-    position: fixed;
-    top: 25px;
-    left: 25px;
-    width: calc(55px + 2.9vw);
-  }
+
   h1 {
 
     display: inline-block;

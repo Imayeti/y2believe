@@ -25,6 +25,10 @@
 
 <body <?php body_class(); ?>>
 
+	<div class="header-image" >
+    <img class="logo" src="/wp-content/uploads/2019/08/Y2B-logos_layer.png" alt="">
+
+  </div>
 
 	<!-- <div id="mySidenav" class="sidenav" >
 	      <a href="javascript:void(0)" class="closebtn circle boxShadow" onclick="closeNav();ga('send', 'event', 'Close', 'click', 'Menu');"><div class="outer">

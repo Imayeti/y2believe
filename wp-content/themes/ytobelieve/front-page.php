@@ -16,10 +16,7 @@ get_header();
 ?>
 
 <header class="header-home text-center" style="background-image: url('http://y2believe.local/wp-content/uploads/2019/08/Prayer-tent-openingV4-1.jpg')">
-  <div class="header-image" >
-    <img class="logo" src="/wp-content/uploads/2019/08/Y2B-logos_layer.png" alt="">
 
-  </div>
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth </h1>
 
