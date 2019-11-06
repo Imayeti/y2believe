@@ -249,7 +249,7 @@ get_header();
 <section id="headline-bg">
   <div class="headline-bg-pic text-white" style="background-image: url('/wp-content/uploads/2019/11/MB-NH-3-2.jpg')">
 
-    <h1 class="text-center text-white">Why/How it Works</h1>
+    <h1 class="text-center text-white" data-aos="fade-in" data-aos-duration="1400" data-aos-easing="ease-in-out">Why/How it Works</h1>
 
   </div>
 </section>
@@ -259,25 +259,27 @@ get_header();
 <section class="why-how">
   <!-- <p><?php the_field('whyhow_it_works'); ?></p> -->
    <div class="row">
-    <div class="col-12 col-md-5 ">
+    <div class="col-12 col-md-5 "  data-aos="fade-right"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out">
 
-      <img src="/wp-content/uploads/2019/11/Michael-at-CM-Summit-2017.jpg" alt="">
+      <img   src="/wp-content/uploads/2019/11/Michael-at-CM-Summit-2017.jpg" alt="">
 
     </div>
     <div class="col-12 col-md-7 md7-text-padding">
-       <p class="mt-0 blue-text big-p">
+       <p class="mt-0 blue-text big-p" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
          When students arrive on a college campus, they are immediately bombarded with influences contrary to Christianity and the results have been devastating: <i>75% of Christian youth abandon their faith after High School.</i>
        </p>
 
-       <p>
+       <p data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
          <b class="blue-text">Y2Believe (Y2B)</b> is mounting a full-scale effort to reverse these alarming trends by addressing issues as they arise in High School. Y2B engages students on public high school and middle school campuses with compelling evidence from history, philosophy, and science that support the truth of Christianity while giving them an opportunity to respond to the Gospel.
        </p>
 
-       <p>
+       <p data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
          <b class="blue-text">Y2B</b> partners with existing Christian ministries on public school campuses, bringing lively discussions on topics of significant interest to students. These core discussion topics (the Apologetic Fundamentals) are address with students over 4 weeks :
        </p>
 
-        <ul class="rmt-1 rmb-3">
+        <ul class="rmt-1 rmb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <li class="">Who are you? What is Truth? Are there Moral Absolutes?</li>
           <li class="">What Evidence is there that God Exists?</li>
           <li class="">Is the Bible Trustworthy?</li>
@@ -288,11 +290,11 @@ get_header();
 
 
 
-      <p>
+      <p data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <b class="blue-text">Y2B</b> instills students with clear, rational, open-minded thinking skills informed by apologetic evidence. Teaching students to think critically allows them to provide engaging responses to challenges to their faith based on evidence. Students engage their peers to evaluate why they believe what they believe and to support their truth claims with evidence.
       </p>
 
-      <p>
+      <p data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <b class="blue-text">Y2B</b> empowers students with life-changing irrefutable evidence for biblical truths while sharpening student’s skills for winsome engagement. Y2B develops students to become the most magnetic and prominent influencers on campus leading their peers to live the best life as God intended and then going on to live out the Great Commission all their lives.
       </p>
 
@@ -301,6 +303,24 @@ get_header();
   </div>
 
 </section>
+
+
+<section id="headline-bg">
+  <div class="headline-bg-pic text-white" style="background-image: url('/wp-content/uploads/2019/11/Michael-at-Aletheia5.jpg')">
+
+    <h1 class="text-center text-white" data-aos="fade-in" data-aos-duration="1400" data-aos-easing="ease-in-out">About Us</h1>
+
+  </div>
+</section>
+
+
+<section id="about-us">
+  <h4 class="text-center">Y2Believe engages students on public high school and middle school campuses with compelling evidence from history, philosophy, and science that support the truth of Christianity while giving them an opportunity to respond to the Gospel.</h4>
+  <h4 class="text-center">Y2Believe empowers students with life-changing irrefutable evidence for biblical truths while sharpening student’s skills for winsome engagement. </h4>
+  <h4 class="text-center">Y2Believe develops students to become the most magnetic and prominent influencers on campus leading their peers to live the best life as God intended and then going on to live out the Great Commission all their lives.</h4>
+
+</section>
+
 
 <?php
 

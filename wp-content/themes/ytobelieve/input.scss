@@ -128,6 +128,12 @@ img {
 
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
+#about-us {
+  padding: calc(30px + 4.5vw);
+  h4 {
+    margin: calc(30px + 3.5vw);
+  }
+}
 .blue-text {
   color: $blue-text;
 }
@@ -356,7 +362,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-size: cover;
-    min-height: 20vh;
+    min-height: 10vh;
     background-attachment: fixed;
     background-position: center center;
     padding: calc(20px + 8vw) calc(40px + 10vw) ;

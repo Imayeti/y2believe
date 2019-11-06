@@ -94,6 +94,11 @@ button:active {
 img {
   width: 200px; }
 
+#about-us {
+  padding: calc(30px + 4.5vw); }
+  #about-us h4 {
+    margin: calc(30px + 3.5vw); }
+
 .blue-text {
   color: #0b5784; }
 
@@ -231,7 +236,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  min-height: 20vh;
+  min-height: 10vh;
   background-attachment: fixed;
   background-position: center center;
   padding: calc(20px + 8vw) calc(40px + 10vw); }
