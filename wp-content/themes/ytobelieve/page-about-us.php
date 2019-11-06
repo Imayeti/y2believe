@@ -16,8 +16,21 @@ get_header();
 ?>
 
 
+<header class="header-about-us text-center" style="background-image: url('http://y2believe.local/wp-content/uploads/2019/08/Prayer-tent-openingV4-1.jpg')">
 
-   <div class="map-responsive">
+
+  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >About Us</h1>
+
+
+
+
+</header>
+
+<p><?php the_field('main_paragraph'); ?></p>
+
+
+
+   <!-- <div class="map-responsive">
      <div class="rmt-5" id="map"></div>
    </div>
    <script>
@@ -174,7 +187,7 @@ get_header();
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ5lxj8t0vjhHUJTjr_68MF2qt-Lks8lY&callback=initMap"
    async defer></script>
-
+ -->
 
 
 

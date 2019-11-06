@@ -12,7 +12,7 @@
 ?>
 <footer>
    <div class="text-center info">
-     <p>Contact</p>
+     <h6 >Contact</h6>
      <p><a href="tel:334-569-6026">334-569-6026</a></p>
      <p><a href="mailto:mbossman@y2believe.org">mbossman@y2believe.org</a></p>
 

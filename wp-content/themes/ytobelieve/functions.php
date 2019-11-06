@@ -134,7 +134,8 @@ wp_enqueue_script( 'ytobelieve-bootstrap',  'https://stackpath.bootstrapcdn.com/
 wp_enqueue_script( 'ytobelieve-AOS',  'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '20151215', true );
 wp_enqueue_script( 'ytobelieve-jarallax', 'https://unpkg.com/jarallax@1.10/dist/jarallax.min.js', array(), '20151215', true );
 wp_enqueue_script( 'ytobelieve_main_js', get_template_directory_uri() . '/js/ytobelieve.js', array(), microtime(), true );
-wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Arimo&display=swap');
+// wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Arimo&display=swap');
+wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Khula&display=swap');
 // wp_enqueue_style('animate', '/wp-content/themes/ytobelieve/animate.css');
 wp_enqueue_style('font_awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 wp_enqueue_style('AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.css');

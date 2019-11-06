@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
 
 	<div class="header-image" >
-    <img class="logo" src="/wp-content/uploads/2019/08/Y2B-logos_layer.png" alt="">
+    <img class="logo" src="/wp-content/uploads/2019/11/logo-large.png" alt="">
 
   </div>
 
@@ -120,7 +120,7 @@
 					<!-- <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg toggle"><i class="fa fa-times"></i></a> -->
 
 					<li id="first-li">
-						<a href="#" title="Go to about us">About Us</a>
+						<a href="<?php site_url() ?>/about-us" title="Go to about us">About Us</a>
 					</li>
 					<li>
 						<a href="#" title="Go to partner section">Partner</a>

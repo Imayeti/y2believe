@@ -1,4 +1,4 @@
-.header-home {
+.header-home, .header-about-us {
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
@@ -7,22 +7,23 @@
 
 a {
   font-size: calc(14px + .2vw);
-  font-family: "Yantramanav", sans-serif; }
+  font-family: "Khula", sans-serif; }
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Yantramanav", sans-serif; }
+  font-family: "Khula", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Khula", sans-serif;
   letter-spacing: 3px;
   margin: 0; }
 
 p {
-  font-size: calc(14px + .2vw);
+  font-size: calc(13px + .2vw);
   margin: 0;
-  font-family: "Yantramanav", sans-serif;
-  line-height: 1.8; }
+  font-family: "Khula", sans-serif;
+  line-height: 1.8;
+  letter-spacing: .5px; }
 
 h1 {
   font-size: calc(24px + 2vw);
@@ -93,8 +94,26 @@ button:active {
 img {
   width: 200px; }
 
+.blue-text {
+  color: #0b5784; }
+
+.why-how {
+  padding: calc(35px + 6vw) 0; }
+  .why-how p {
+    margin: calc(10px + .5vw); }
+  .why-how .big-p {
+    font-size: calc(15px + .25vw);
+    line-height: 1.75;
+    font-weight: 600; }
+  .why-how img {
+    width: 95%; }
+  .why-how .md7-text-padding {
+    padding: 0 calc(20px + 2.5vw); }
+  .why-how li {
+    color: #0b5784; }
+
 .sans {
-  font-family: "Yantramanav", sans-serif; }
+  font-family: "Khula", sans-serif; }
 
 .marker-popup img {
   width: 100% !important;
@@ -112,7 +131,7 @@ img {
   position: fixed;
   top: 25px;
   left: 25px;
-  width: calc(55px + 2.9vw); }
+  width: calc(60px + 3.2vw); }
 
 .fa-chevron-down {
   transition: all ease 0.3s;
@@ -140,12 +159,14 @@ img {
     transform: translateY(-15px); } }
 footer {
   padding: calc(20px + 2vw) calc(30px + 5vw);
-  margin-top: 200px;
   background-color: #0d1a23;
-  color: grey; }
+  color: #a5a2a2; }
+  footer h6 {
+    letter-spacing: 1px;
+    margin-bottom: 10px; }
   footer a {
     transition: all ease 0.3s;
-    color: grey; }
+    color: #a5a2a2; }
     footer a:hover {
       text-decoration: none;
       color: white; }
@@ -157,26 +178,60 @@ footer {
   .header-home h1 {
     display: inline-block;
     margin: 25vh auto;
-    padding: 0 10px;
+    padding: 12px 10px 0px;
     border: 3px solid white;
     color: rgba(255, 255, 255, 0.9) !important;
-    font-family: "Yantramanav", sans-serif;
+    font-family: "Khula", sans-serif;
     font-weight: bold;
     letter-spacing: 3.5px;
     font-size: calc(20px + 2vw); }
 
+.header-about-us {
+  position: relative;
+  min-height: 40vh; }
+  .header-about-us h1 {
+    display: inline-block;
+    margin: 25vh auto;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: "Khula", sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.5px;
+    font-size: calc(22px + 2.5vw); }
+
 #arrows {
   padding: calc(20px + 5vw); }
   #arrows img {
-    width: calc(100px + 10vw); }
+    width: calc(70px + 7vw); }
   #arrows .right-arrow {
     align-self: flex-end; }
+  #arrows .vision p {
+    float: right;
+    text-align: right; }
+  #arrows .vision h5 {
+    text-align: right; }
   #arrows .flip-words {
     padding: calc(10px + 1vw) calc(30px + 1vw); }
+    #arrows .flip-words h5 {
+      color: #0b5784;
+      font-weight: bold; }
+    #arrows .flip-words p {
+      max-width: 500px;
+      font-weight: 500; }
 
 #testimonials .testimonial-pic {
   background-size: cover;
-  min-height: 50vh;
+  min-height: 20vh;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: calc(20px + 8vw) calc(40px + 10vw); }
+
+#headline-bg .headline-bg-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  min-height: 20vh;
   background-attachment: fixed;
   background-position: center center;
   padding: calc(20px + 8vw) calc(40px + 10vw); }
