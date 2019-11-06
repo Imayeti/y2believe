@@ -1,4 +1,4 @@
-.header-home, .header-about-us {
+.header-home, .header-about-us, .header-process {
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
@@ -109,7 +109,10 @@ img {
   .why-how .big-p {
     font-size: calc(15px + .25vw);
     line-height: 1.75;
-    font-weight: 600; }
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto calc(20px + 3.5vw);
+    text-align: center; }
   .why-how img {
     width: 95%; }
   .why-how .md7-text-padding {
@@ -195,6 +198,19 @@ footer {
   position: relative;
   min-height: 40vh; }
   .header-about-us h1 {
+    display: inline-block;
+    margin: 25vh auto;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: "Khula", sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.5px;
+    font-size: calc(22px + 2.5vw); }
+
+.header-process {
+  position: relative;
+  min-height: 40vh; }
+  .header-process h1 {
     display: inline-block;
     margin: 25vh auto;
     padding: 0 10px;

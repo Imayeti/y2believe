@@ -26,7 +26,11 @@
 <body <?php body_class(); ?>>
 
 	<div class="header-image" >
-    <img class="logo" src="/wp-content/uploads/2019/11/logo-large.png" alt="">
+		<a href="<?php site_url() ?>/">
+					<img class="logo" src="/wp-content/uploads/2019/11/logo-large.png" alt="">
+		</a>
+
+
 
   </div>
 
@@ -120,16 +124,19 @@
 					<!-- <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg toggle"><i class="fa fa-times"></i></a> -->
 
 					<li id="first-li">
+						<a href="<?php site_url() ?>/" title="Go to home">Home</a>
+					</li>
+					<li >
 						<a href="<?php site_url() ?>/about-us" title="Go to about us">About Us</a>
 					</li>
 					<li>
-						<a href="#" title="Go to partner section">Partner</a>
+						<a href="<?php site_url() ?>/partner" title="Go to partner section">Partner</a>
 					</li>
 					<li>
-						<a href="#" title="process">Process</a>
+						<a href="<?php site_url() ?>/process" title="process">Process</a>
 					</li>
 					<li>
-						<a href="#" title="evidence">Evidence</a>
+						<a href="<?php site_url() ?>/evidence" title="evidence">Evidence</a>
 					</li>
 
 				</ul>

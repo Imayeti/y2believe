@@ -26,8 +26,12 @@ get_header();
 
 </header>
 
-<p><?php the_field('main_paragraph'); ?></p>
+<section id="about-us">
+  <h4 class="text-center">Y2Believe <strong class="blue-text"> engages</strong>  students on public high school and middle school campuses with compelling evidence from history, philosophy, and science that support the truth of Christianity while giving them an opportunity to respond to the Gospel.</h4>
+  <h4 class="text-center">Y2Believe<strong class="blue-text"> empowers</strong>   students with life-changing irrefutable evidence for biblical truths while sharpening student’s skills for winsome engagement. </h4>
+  <h4 class="text-center"> Y2Believe<strong class="blue-text "> develops </strong> students to become the most magnetic and prominent influencers on campus leading their peers to live the best life as God intended and then going on to live out the Great Commission all their lives.</h4>
 
+</section>
 
 
    <!-- <div class="map-responsive">
