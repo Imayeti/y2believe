@@ -165,7 +165,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
   min-width: 160px;
   position: absolute;
   /* background: grey; */
-  top: 0;
+  bottom: 0;
   height: 100vh;
   left: 0;
   // background: transparent;
@@ -178,7 +178,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
   height: 3px;
   background-color: $blue-text;
   width: 2vw;
-  min-width: 10px;
+  min-width: 15px;
   margin: calc(10px + 1vw) auto;
 }
 .hr-medium {

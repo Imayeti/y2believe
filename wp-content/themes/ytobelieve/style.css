@@ -128,7 +128,7 @@ img {
   min-width: 160px;
   position: absolute;
   /* background: grey; */
-  top: 0;
+  bottom: 0;
   height: 100vh;
   left: 0;
   background: white;
@@ -138,7 +138,7 @@ img {
   height: 3px;
   background-color: #0b5784;
   width: 2vw;
-  min-width: 10px;
+  min-width: 15px;
   margin: calc(10px + 1vw) auto; }
 
 .hr-medium {
