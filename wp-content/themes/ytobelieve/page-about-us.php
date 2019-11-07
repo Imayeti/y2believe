@@ -17,7 +17,7 @@ get_header();
 
 
 <header class="header-about-us text-center" style="background-image: url('/wp-content/uploads/2019/11/Michael-at-Aletheia5.jpg')">
-
+  <div class="header-gradient"></div>
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >About Us</h1>
 

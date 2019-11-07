@@ -17,7 +17,7 @@ get_header();
 
 
 <header class="header-process text-center" style="background-image: url('/wp-content/uploads/2019/08/Prayer-tent-openingV4-1.jpg')">
-
+  <div class="header-gradient"></div>
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Process</h1>
 
@@ -25,15 +25,11 @@ get_header();
 
 
 <section class="why-how">
-  <p class="mt-0 blue-text big-p" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+  <p class="mt-0 blue-text big-p " data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
     When students arrive on a college campus, they are immediately bombarded with influences contrary to Christianity and the results have been devastating: <br> <i>75% of Christian youth abandon their faith after High School.</i>
   </p>
 
-  <div class="animation-element small-center-div">
-    <div class="hr-center-1">  </div>
-    <div class="hr-center-2 ">  </div>
-    <div class="hr-center-3">  </div>
-  </div>
+
 
    <div class="row">
     <div class="col-12 col-md-5 "  data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">

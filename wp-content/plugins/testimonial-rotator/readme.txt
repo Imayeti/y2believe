@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: halgatewood
 Donate link: https://halgatewood.com/donate/
-Tags: testimonials, sidebar, shortcode, testimonial, praise, homage, testimony, witness, appreciation, green light, rotator, rotators, for developers
-Requires at least: 3.7
-Tested up to: 5.2
+Tags: testimonials, sidebar, shortcode, testimonial, praise, homage, testimony, witness, appreciation, rotator, rotators, for developers
+Requires at least: 5.0
+Tested up to: 5.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily add Testimonials to your WordPress Blog or Company Website.
+Easily add and manage Testimonials to your site.
 
 == Description ==
 
@@ -70,6 +70,9 @@ Check out this [Help Guide](https://halgatewood.com/docs/plugins/testimonial-rot
 
 
 == Changelog ==
+
+= 3.0 - Oct. 28th, 2019 =
+* NEW: Theme pack merged into this plugin. Thank you for the support those how purchased the theme pack.
 
 = 2.5.2 - Oct. 19, 2018 =
 * FIX: added wp_reset_postdata to testimonial_rotator_rating

@@ -10,7 +10,7 @@ function testimonial_rotator_single( $content )
 	global $post;
 	
 	// SINGLE TESTIMONIAL
-	if( is_single() AND get_post_type() == "testimonial" )
+	if( is_single() AND get_post_type() == 'testimonial' )
 	{
 		$testimonial_id 	= isset($testimonial_id) ? $testimonial_id : $post->ID;
 		

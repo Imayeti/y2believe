@@ -198,20 +198,15 @@ function testimonial_rotator_metabox_effects()
 		
 		<div id="testimonial-rotator-templates">
 		
-			<?php foreach( $available_themes as $theme_slug => $available_theme ) { ?>
+			<?php foreach( $available_themes as $theme_slug => $available_theme ) { if( !isset($available_theme['icon']) ) $available_theme['icon'] = TESTIMONIAL_ROTATOR_URI . 'templates/' . $theme_slug. '/icon.png'; ?>
 				<div class="testimonial-rotator-template-selector-wrap <?php if($template == $theme_slug) echo "tr_template_selected"; ?>" style="float: left; text-align: center; padding: 10px; margin: 10px; min-height: 100px;">
 					<a href="javascript:;" class="testimonial-rotator-template-selector" data-slug="<?php echo esc_attr($theme_slug); ?>"><img src="<?php echo $available_theme['icon']; ?>" style="width: 155px;"></a><br>
 					<b><?php echo $available_theme['title']; ?></b> - <a href="javascript:;" class="testimonial-rotator-template-selector" data-slug="<?php echo esc_attr($theme_slug); ?>"><?php echo __('Use', 'testimonial-rotator'); ?></a>
 				</div>
 			<?php } ?>
 			
-			<div style="float: left; text-align: center; padding: 10px; margin: 10px; min-height: 100px;">
-				<a href="<?php echo TESTIMONIAL_ROTATOR_THEMES_URL; ?>" class="testimonial-rotator-template-selector" target="_blank"><img src="<?php echo TESTIMONIAL_ROTATOR_URI . "/images/get-themes.png"; ?>" style="width: 155px;"></a><br>
-				<b>Add More Themes</b> - <a href="<?php echo TESTIMONIAL_ROTATOR_THEMES_URL; ?>"  target="_blank"><?php echo __('Go', 'testimonial-rotator'); ?></a>
-			</div>
-			
 			<div style="clear:both;"></div>
-			<input type="hidden" name="template" id="testimonial_rotator_template" value="<?php echo $template; ?>" />
+			<input type="hidden" name="template" id="testimonial_rotator_template" value="<?php echo $template; ?>">
 		</div>
 		
 	</div>

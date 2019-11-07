@@ -188,16 +188,12 @@ function register_testimonial_rotator_submenu_page()
 	// ABILITY TO EDIT ROTATORS FOR ADMINS
 	add_submenu_page( 'edit.php?post_type=testimonial', __('Add Rotator', 'testimonial-rotator'), __('Add Rotator', 'testimonial-rotator'), 'manage_options', 'post-new.php?post_type=testimonial_rotator' ); 
 	
-	
 	// SETTINGS PAGE
 	add_submenu_page( 'edit.php?post_type=testimonial', __('Settings', 'testimonial-rotator'), __('Settings', 'testimonial-rotator'), 'manage_options', 'testimonial-rotator', 'testimonial_rotator_settings_callback' );
-	
 	
 	if( !current_user_can('manage_options') )
 	{
 		$current_user_roles = (array) $current_user->roles;
-		
-		
 			
 		// ADD THE EDIT ROTATOR PAGE FOR OTHER ROLES THAT ARE SELECTED IN SETTINGS
 		$creator_setting = (array) get_option( 'testimonial-rotator-creator-role' );
@@ -226,22 +222,13 @@ function testimonial_rotator_cpt_icon()
 {
 	global $wp_version;
 	
-	if($wp_version >= 3.8)
+	if( $wp_version >= 3.8 )
 	{
 		echo '
 			<style> 
 				#adminmenu #menu-posts-testimonial div.wp-menu-image:before { content: "\f205"; }
 			</style>
 		';	
-	}
-	else
-	{
-?>
-	<style type="text/css" media="screen">
-		#menu-posts-testimonial .wp-menu-image { background: url(<?php echo TESTIMONIAL_ROTATOR_URI . '/images/thumb-up.png'; ?>) no-repeat 6px -17px !important; }
-		#menu-posts-testimonial:hover .wp-menu-image, #menu-posts-testimonial.wp-has-current-submenu .wp-menu-image { background-position: 6px 7px!important; }	
-	</style>
-<?php 
 	}
 }
 
@@ -250,13 +237,11 @@ function testimonial_rotator_cpt_icon()
 function testimonial_rotator_plugin_action_links( $links, $file ) 
 {
 	$donate_link 		= '<a href="https://halgatewood.com/donate" target="_blank">' . esc_html__( 'Donate', 'testimonial-rotator' ) . '</a>';
-	$themes_link 		= '<a href="' . TESTIMONIAL_ROTATOR_THEMES_URL . '" target="_blank">' . esc_html__( 'Theme Pack', 'testimonial-rotator' ) . '</a>';
 	$settings_link 		= '<a href="' . admin_url( 'edit.php?post_type=testimonial&page=testimonial-rotator' ) . '">' . esc_html__( 'Settings', 'testimonial-rotator' ) . '</a>';
 	
 	if ( $file == 'testimonial-rotator/testimonial-rotator.php' )
 	{
 		array_unshift( $links, $settings_link );
-		array_unshift( $links, $themes_link );
 		array_unshift( $links, $donate_link );
 	}
 	
@@ -293,7 +278,7 @@ function testimonial_rotator_admin_footer_for_thickbox()
             	var id = jQuery('#testimonial-rotator-select-box').val();
                 if ('' === id)
                 {
-                    alert('<?php _e( "You must choose a rotator", "testimonial_rotator" ); ?>');
+                    alert('<?php _e( 'You must choose a rotator', 'testimonial_rotator' ); ?>');
                     return;
                 }
                 window.send_to_editor('[testimonial_rotator id="' + id + '"]');

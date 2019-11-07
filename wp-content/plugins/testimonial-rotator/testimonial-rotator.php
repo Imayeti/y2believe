@@ -7,15 +7,13 @@ Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
 Text Domain: testimonial-rotator
 Domain Path: /languages
-Version: 2.5.2
+Version: 3.0
 */
 
 
 // CONSTANTS
 if( !defined('TESTIMONIAL_ROTATOR_URI') ) define('TESTIMONIAL_ROTATOR_URI', trailingslashit( plugin_dir_url( __FILE__ )));
 if( !defined('TESTIMONIAL_ROTATOR_DIR') ) define('TESTIMONIAL_ROTATOR_DIR', plugin_dir_path( __FILE__ ));
-if( !defined('TESTIMONIAL_ROTATOR_THEMES_URL') ) define('TESTIMONIAL_ROTATOR_THEMES_URL', 'https://halgatewood.com/testimonial-rotator-themes');
-
 
 // SETUP
 add_action( 'plugins_loaded', 'testimonial_rotator_setup' );
@@ -381,7 +379,7 @@ function testimonial_rotator( $atts )
 
 	// STAR ICON
 	$testimonial_rotator_star 	= apply_filters( 'testimonial_rotator_star', 'fa-star', $template_name, $id );
-	if( $testimonial_rotator_star != "" AND substr($testimonial_rotator_star,0,3) != "fa-" ) $testimonial_rotator_star = "fa-" . $testimonial_rotator_star;
+	if( $testimonial_rotator_star != "" AND substr($testimonial_rotator_star,0,3) != 'fa-' ) $testimonial_rotator_star = "fa-" . $testimonial_rotator_star;
 	
 
 	// IF ID, QUERY FOR JUST THAT ROTATOR
@@ -393,7 +391,7 @@ function testimonial_rotator( $atts )
 
 	
 	// GET TESTIMONIALS
-	$order_by = ($shuffle) ? "rand" : "menu_order";
+	$order_by = ($shuffle) ? 'rand' : 'menu_order';
 	$testimonials_args = array(
 								'post_type' => 'testimonial',
 								'order' => apply_filters( 'testimonial_rotator_order', 'ASC', $template_name, $id ),
@@ -420,8 +418,8 @@ function testimonial_rotator( $atts )
 
 
 	// ROTATOR CLASSES
-	$cycle_class 						= ($format == "rotator") ? " cycletwo-slideshow" : "";
-	$rotator_class_prefix 				= ($is_widget) ? "_widget" : "";
+	$cycle_class 						= ($format == "rotator") ? " cycletwo-slideshow" : '';
+	$rotator_class_prefix 				= ($is_widget) ? '_widget' : '';
 	if($extra_classes) 					$cycle_class .= " $extra_classes ";
 	$cycle_class 						.= " format-{$format}";
 	$cycle_class 						.= " template-{$template_name}";
@@ -481,7 +479,8 @@ function testimonial_rotator( $atts )
 
 		do_action( 'testimonial_rotator_slides_before' );
 		
-		$template_prefix = ($is_single) ? "single" : "loop";
+		
+		$template_prefix = ($is_single) ? 'single' : 'loop';
 
 
 		// LOOK FOR TEMPLATE IN THEME
@@ -536,6 +535,7 @@ function testimonial_rotator( $atts )
 
 			// LOAD TEMPLATE
 			if( $template ) include( $template );
+		
 
 			// SLIDE COUNTER
 			$slide_count++;
@@ -600,8 +600,13 @@ function testimonial_rotator_meta_query( $id )
 function testimonial_rotator_available_themes()
 {
 	$themes = array();
-	$themes['default'] 		= array('title' => 'Default', 'icon' => TESTIMONIAL_ROTATOR_URI . "/images/icon-default.png");
-	$themes['longform'] 	= array('title' => 'Longform', 'icon' => TESTIMONIAL_ROTATOR_URI . "/images/icon-longform.png");
+	$themes['default'] 		= array('title' => 'Default');
+	$themes['longform'] 	= array('title' => 'Longform');
+	$themes['onepig'] 		= array('title' => 'One Little Pig');
+	$themes['twopigs'] 		= array('title' => 'Two Little Pigs');
+	$themes['threepigs'] 	= array('title' => 'Three Little Pigs');
+	$themes['starrynight'] 	= array('title' => 'Starry Night');
+	$themes['headlined'] 	= array('title' => 'Headlined');
 	
 	return (array) apply_filters( 'testimonial_rotator_themes', $themes );
 }
@@ -670,7 +675,7 @@ function testimonial_rotator_rating( $id = false, $return = 'stars' )
 	{
 		$global_rating_number = (int) $global_rating_number;
 		
-		$testimonial_rotator_star 	= apply_filters( 'testimonial_rotator_star', 'fa-star', 'rating', $id );
+		$testimonial_rotator_star = apply_filters( 'testimonial_rotator_star', 'fa-star', 'rating', $id );
 		if( $testimonial_rotator_star != "" AND substr($testimonial_rotator_star,0,3) != "fa-" ) $testimonial_rotator_star = "fa-" . $testimonial_rotator_star;
 		
 		$rtn = "<span class=\"testimonial_rotator_stars cf-tr\">\n";

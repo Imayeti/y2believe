@@ -17,6 +17,8 @@ get_header();
 
 <header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/11/Tyler-teaching-2BLUE.jpg')">
 
+  <div class="header-home-gradient"></div>
+
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth </h1>
 
@@ -26,6 +28,8 @@ get_header();
   </div>
 
 </header>
+
+
 
 <section id="arrows">
    <div class="row no-gutters">

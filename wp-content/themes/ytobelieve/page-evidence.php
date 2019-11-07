@@ -17,7 +17,7 @@ get_header();
 
 
 <header class="header-process text-center" style="background-image: url('/wp-content/uploads/2019/11/MB-PR-8-2.jpeg')">
-
+  <div class="header-gradient"></div>
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Evidence</h1>
 
 </header>

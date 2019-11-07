@@ -147,16 +147,46 @@ img {
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
+.header-home-gradient {
+  width: 25%;
+  min-width: 160px;
+  position: absolute;
+  /* background: grey; */
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  // background: transparent;
+
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
+}
+.header-gradient {
+  width: 25%;
+  min-width: 160px;
+  position: absolute;
+  /* background: grey; */
+  top: 0;
+  height: 100vh;
+  left: 0;
+  // background: transparent;
+
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
+}
+
 .hr-small {
   height: 3px;
   background-color: $blue-text;
   width: 2vw;
+  min-width: 10px;
   margin: calc(10px + 1vw) auto;
 }
 .hr-medium {
   height: 4px;
   background-color: $blue-text;
   width: 4vw;
+  min-width: 20px;
+
   margin: 0 auto;
 }
 #about-us {
@@ -174,7 +204,7 @@ img {
   padding: calc(35px + 6vw) 0;
   .p-margin {
     // color: #0b5784;
-    margin: calc(10px + .5vw);
+    margin: calc(10px + .5vw) 0;
   }
   .big-p {
     font-size: calc(15px + .25vw);
@@ -183,6 +213,7 @@ img {
     max-width: 800px;
     margin: 0 auto calc(25px + 4.5vw);
     text-align: center;
+    padding: 0 calc(10px + .5vw);
   }
   img {
     width: 95%;

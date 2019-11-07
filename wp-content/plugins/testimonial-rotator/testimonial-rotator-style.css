@@ -105,3 +105,150 @@ div.testimonial-rotator-error { color: #aa3429; font-weight: bold; display: bloc
 
 .testimonial_rotator.template-longform .testimonial_rotator_img { width: 50px; height: 50px; border-radius: 100%; margin: 0 auto; display: block; overflow: hidden; }
 .testimonial_rotator.template-longform .testimonial_rotator_img img { width: 50px; height: 50px; }
+
+
+
+/* THREE LITTLE PIGS */
+.testimonial_rotator.template-threepigs .slide { text-align: center; clear: both; width: 100%; }
+.testimonial_rotator.template-threepigs img { border-radius: 100%; width: 75%; max-width: 100px; height: auto; display: block; margin: 10px auto; }
+.testimonial_rotator.template-threepigs .testimonial_rotator_star { float: none; font-size: 0.9em; margin: 0; }
+.testimonial_rotator.template-threepigs .testimonial_rotator_slide_inner { width: 33%; float: left; padding: 0 5px; }
+.testimonial_rotator.template-threepigs .testimonial_rotator_author_info { border: none; font-size: 0.8em; padding: 0; }
+
+.testimonial_rotator.template-threepigs .testimonial_rotator_slide_title { line-height: 1.2em; }
+.testimonial_rotator.template-threepigs .testimonial_rotator_quote { font-size: 0.9em; line-height: 1.1em; padding-bottom: 10px; }
+
+
+
+/* THREE LITTLE PIGS
+   SINGLE SHORTCODE */
+.testimonial_rotator_single.template-threepigs .testimonial_rotator_slide_inner { width: 100%; }
+.testimonial_rotator_single.template-threepigs img { max-width: 100px; } 
+
+.testimonial_rotator.template-threepigs .testimonial_rotator_slide_title,
+.testimonial_rotator.template-threepigs .testimonial_rotator_author_info,
+.testimonial_rotator.template-threepigs .testimonial_rotator_author_info p { text-align: center; }
+
+
+/* THREE LITTLE PIGS
+   GENERIC RESPONSIVE */
+@media only screen and (max-width: 640px) 
+{
+	.testimonial_rotator.template-threepigs .testimonial_rotator_slide_inner { width: 75%; float: none; margin: 20px auto 40px auto; }
+	.testimonial_rotator.template-threepigs img { max-width: 50px; margin-bottom: 0; }
+}
+
+
+
+/* TWO LITTLE PIGS */
+.testimonial_rotator.template-twopigs .slide { text-align: center; clear: both; width: 100%; }
+.testimonial_rotator.template-twopigs img { border-radius: 100%; width: 75%; max-width: 100px; height: auto; display: block; margin: 10px auto; }
+.testimonial_rotator.template-twopigs .testimonial_rotator_star { float: none; font-size: 0.9em; margin: 0; }
+.testimonial_rotator.template-twopigs .testimonial_rotator_slide_inner { width: 50%; float: left; padding: 0 5px; }
+.testimonial_rotator.template-twopigs .testimonial_rotator_author_info { border: none; font-size: 0.8em; padding: 0; }
+
+.testimonial_rotator.template-twopigs .testimonial_rotator_slide_title { line-height: 1.2em; }
+.testimonial_rotator.template-twopigs .testimonial_rotator_quote { font-size: 0.9em; line-height: 1.1em; padding-bottom: 10px; }
+
+
+/* TWO LITTLE PIGS
+   SINGLE SHORTCODE */
+.testimonial_rotator_single.template-twopigs .testimonial_rotator_slide_inner { width: 100%; }
+.testimonial_rotator_single.template-twopigs img { max-width: 100px; } 
+
+.testimonial_rotator.template-twopigs .testimonial_rotator_slide_title,
+.testimonial_rotator.template-twopigs .testimonial_rotator_author_info,
+.testimonial_rotator.template-twopigs .testimonial_rotator_author_info p { text-align: center; }
+
+
+/* TWO LITTLE PIGS
+   GENERIC RESPONSIVE */
+@media only screen and (max-width: 640px) 
+{
+	.testimonial_rotator.template-twopigs .testimonial_rotator_slide_inner { width: 75%; float: none; margin: 20px auto 40px auto; }
+	.testimonial_rotator.template-twopigs img { max-width: 50px; margin-bottom: 0; }
+}
+
+
+/* ONE LITTLE PIG */
+.testimonial_rotator.template-onepig .slide { text-align: center; clear: both; width: 100%; }
+.testimonial_rotator.template-onepig img { border-radius: 100%; width: 75%; max-width: 100px; height: auto; display: block; margin: 10px auto; }
+.testimonial_rotator.template-onepig .testimonial_rotator_star { float: none; font-size: 0.9em; margin: 0; }
+.testimonial_rotator.template-onepig .testimonial_rotator_slide_inner { }
+.testimonial_rotator.template-onepig .testimonial_rotator_author_info { border: none; font-size: 0.8em; padding: 0; }
+
+.testimonial_rotator.template-onepig .testimonial_rotator_slide_title { line-height: 1.2em; }
+.testimonial_rotator.template-onepig .testimonial_rotator_quote { font-size: 0.9em; line-height: 1.1em; padding-bottom: 10px; }
+
+
+/* ONE LITTLE PIGS
+   SINGLE SHORTCODE */
+.testimonial_rotator_single.template-onepig .testimonial_rotator_slide_inner { width: 100%; }
+.testimonial_rotator_single.template-onepig img { max-width: 100px; } 
+
+.testimonial_rotator.template-onepig .testimonial_rotator_slide_title,
+.testimonial_rotator.template-onepig .testimonial_rotator_author_info,
+.testimonial_rotator.template-onepig .testimonial_rotator_author_info p { text-align: center; }
+
+
+
+/* HEADLINED */
+
+.testimonial_rotator.template-headlined .slide { width: 100%; height: auto; }
+
+.testimonial_rotator.template-headlined .testimonial_rotator_stars { text-align: center; padding-top: 0; }
+.testimonial_rotator.template-headlined .testimonial_rotator_star { float: none; width: auto; height: auto; }
+
+.testimonial_rotator.template-headlined .testimonial_rotator_slide_title { font-size: 1.4em; text-align: center; }
+.testimonial_rotator.template-headlined .testimonial_rotator_quote { font-size: 0.9em; margin-bottom: 10px; text-align: center; }
+
+.testimonial_rotator.template-headlined hr.headlined_hr { width: 275px; max-width: 100%; height: 3px; background: #efefef; border: none; margin: 20px auto; }
+.testimonial_rotator.template-headlined .testimonial_rotator_author_info { margin: 5px; border: none; padding-top: 5px; font-size: 0.9em; text-align: center; }
+.testimonial_rotator.template-headlined .testimonial_rotator_author_info p { padding-top: 0; margin-top: 0; font-size: 0.9em; line-height: 1.1em; text-align: center; }
+
+.testimonial_rotator.template-headlined .testimonial_rotator_img { width: 50px; margin: 20px auto 0 auto; display: block; overflow: hidden; }
+.testimonial_rotator.template-headlined .testimonial_rotator_img img { width: 50px; height: auto; border-radius: 100%; }
+
+.testimonial_rotator_wrap.headlined-wrap .testimonial_rotator_prev, 
+.testimonial_rotator_wrap.headlined-wrap .testimonial_rotator_next { top: 35%; }
+
+
+/* HEADLINED WIDGET */
+.widget .testimonial_rotator.template-headlined .testimonial_rotator_slide_title { font-size: 1.2em; line-height: 1.1em; }
+
+
+.widget .testimonial_rotator.template-headlined .testimonial_rotator_img { padding-top: 10px; width: 30px; margin: 0 auto; }
+.widget .testimonial_rotator.template-headlined .testimonial_rotator_img img { width: 30px; height: auto; }
+.widget .testimonial_rotator.template-headlined .testimonial_rotator_author_info { margin: 0; padding: 5px; font-size: 0.8em; text-align: center; }
+.widget .testimonial_rotator.template-headlined .testimonial_rotator_author_info p { text-align: center; }
+
+
+
+/* STARRY NIGHT */
+.testimonial_rotator.template-starrynight .slide { width: 100%; height: auto; }
+
+.testimonial_rotator.template-starrynight .testimonial_rotator_stars {  }
+.testimonial_rotator.template-starrynight .testimonial_rotator_star { float: none; width: auto; height: auto; font-size: 32px; line-height: 1em; }
+
+.testimonial_rotator.template-starrynight .testimonial_rotator_slide_title { font-size: 2em; }
+.testimonial_rotator.template-starrynight .testimonial_rotator_quote { font-size: 0.8em; margin-bottom: 10px; padding-top: 10px; }
+
+.testimonial_rotator.template-starrynight .testimonial_rotator_author_info { margin: 10px; border: none; padding-top: 5px; float: left; font-size: 0.9em; }
+.testimonial_rotator.template-starrynight .testimonial_rotator_author_info p { padding-top: 0; margin-top: 0; font-size: 0.9em; line-height: 1.1em;  }
+
+.testimonial_rotator.template-starrynight .testimonial_rotator_img { float: left; width: 50px; height: 50px; border-radius: 100%; margin: 10px 5px; display: block; overflow: hidden; }
+.testimonial_rotator.template-starrynight .testimonial_rotator_img img { width: 50px; height: auto; }
+
+
+.testimonial_rotator_wrap.starrynight-wrap .testimonial_rotator_prev, 
+.testimonial_rotator_wrap.starrynight-wrap .testimonial_rotator_next { top: 25%; }
+
+
+/* STARRY NIGHT WIDGET */
+.widget .testimonial_rotator.template-starrynight .testimonial_rotator_slide_title { font-size: 1.5em; line-height: 1.1em; }
+.widget .testimonial_rotator.template-starrynight .testimonial_rotator_star { font-size: 28px; }
+
+.widget .testimonial_rotator.template-starrynight .testimonial_rotator_img { width: 30px; height: 30px; margin: 5px; }
+.widget .testimonial_rotator.template-starrynight .testimonial_rotator_img img { width: 30px; height: 30px; }
+.widget .testimonial_rotator.template-starrynight .testimonial_rotator_author_info { margin: 0; padding: 7px 0 0 5px; font-size: 0.8em; }
+
