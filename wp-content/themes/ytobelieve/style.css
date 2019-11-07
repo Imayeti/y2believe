@@ -30,17 +30,20 @@ h1 {
   letter-spacing: 2px; }
 
 h2 {
-  font-size: calc(23px + .6vw);
+  font-size: calc(22px + .8vw);
   letter-spacing: 4px; }
 
 h3 {
-  font-size: calc(21px + .4vw); }
+  font-size: calc(19px + .5vw); }
+
+h4 {
+  font-size: calc(16px + .4vw); }
 
 h5 {
-  font-size: calc(14px + .6vw); }
+  font-size: calc(14px + .3vw); }
 
 h6 {
-  font-size: calc(16px + .2vw); }
+  font-size: calc(14px + .2vw); }
 
 button, input[type="submit"], input[type="reset"] {
   background: none;
@@ -91,27 +94,54 @@ button:active {
 .rml-6 {
   margin-left: calc(-20px + 5vw); }
 
+.rmy-1 {
+  margin: calc(5px + .5vw) 0; }
+
+.rmy-2 {
+  margin: calc(10px + .8vw) 0; }
+
+.rmy-3 {
+  margin: calc(10px + 1vw) 0; }
+
+.rmy-4 {
+  margin: calc(15px + 1.5vw) 0; }
+
+.rmy-5 {
+  margin: calc(25px + 1.8vw) 0; }
+
 img {
   width: 200px; }
 
+.hr-small {
+  height: 3px;
+  background-color: #0b5784;
+  width: 2vw;
+  margin: calc(10px + 1vw) auto; }
+
+.hr-medium {
+  height: 4px;
+  background-color: #0b5784;
+  width: 4vw;
+  margin: 0 auto; }
+
 #about-us {
-  padding: calc(30px + 4.5vw); }
+  padding: calc(30px + 5vw) calc(10px + 1.5vw); }
   #about-us h4 {
-    margin: calc(30px + 3.5vw); }
+    margin: calc(15px + 2vw); }
 
 .blue-text {
   color: #0b5784; }
 
 .why-how {
   padding: calc(35px + 6vw) 0; }
-  .why-how p {
+  .why-how .p-margin {
     margin: calc(10px + .5vw); }
   .why-how .big-p {
     font-size: calc(15px + .25vw);
     line-height: 1.75;
     font-weight: 600;
     max-width: 800px;
-    margin: 0 auto calc(20px + 3.5vw);
+    margin: 0 auto calc(25px + 4.5vw);
     text-align: center; }
   .why-how img {
     width: 95%; }
@@ -564,6 +594,9 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Khula" !important; }
 
+.mobile-margin {
+  margin-top: 0; }
+
 @media (min-width: 1200px) {
   #menu-close {
     display: none; } }
@@ -576,10 +609,17 @@ footer {
     background-attachment: scroll;
     padding: 20px; } }
 @media (max-width: 768px) {
+  .mobile-margin {
+    margin-top: 45px; }
+
   .mobile-no-show {
     display: none; }
 
   .mobile-show {
     display: block; } }
+@media (max-width: 1200px) {
+  header {
+    background-position: center center !important;
+    background-attachment: scroll !important; } }
 
 /*# sourceMappingURL=style.css.map */

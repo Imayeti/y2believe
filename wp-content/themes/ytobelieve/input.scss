@@ -57,17 +57,18 @@ h1 {
 
 }
 h2 {
-  font-size: calc(23px + .6vw);
+  font-size: calc(22px + .8vw);
   letter-spacing: 4px;
 
 }
 
-h3 {font-size: calc(21px + .4vw); }
+h3 {font-size: calc(19px + .5vw); }
+h4 {font-size: calc(16px + .4vw); }
 
-h5 {font-size: calc(14px + .6vw)}
+h5 {font-size: calc(14px + .3vw)}
 
 h6 {
-  font-size: calc(16px + .2vw);
+  font-size: calc(14px + .2vw);
 
 }
 button, input[type="submit"], input[type="reset"] {
@@ -122,16 +123,47 @@ button:active {
   margin-left: calc(-20px + 5vw);
 }
 
+.rmy-1 {
+  margin: calc(5px + .5vw) 0;
+}
+.rmy-2 {
+  margin: calc(10px + .8vw) 0;
+}
+.rmy-3 {
+  margin: calc(10px + 1vw) 0;
+}
+.rmy-4 {
+  margin: calc(15px + 1.5vw) 0 ;
+}
+.rmy-5 {
+  margin: calc(25px + 1.8vw) 0 ;
+}
+
+
 img {
   width: 200px;
 }
 
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
+
+.hr-small {
+  height: 3px;
+  background-color: $blue-text;
+  width: 2vw;
+  margin: calc(10px + 1vw) auto;
+}
+.hr-medium {
+  height: 4px;
+  background-color: $blue-text;
+  width: 4vw;
+  margin: 0 auto;
+}
 #about-us {
-  padding: calc(30px + 4.5vw);
+  padding: calc(30px + 5vw) calc(10px + 1.5vw)  ;
   h4 {
-    margin: calc(30px + 3.5vw);
+
+    margin: calc(15px + 2vw);
   }
 }
 .blue-text {
@@ -140,7 +172,7 @@ img {
 
 .why-how {
   padding: calc(35px + 6vw) 0;
-  p {
+  .p-margin {
     // color: #0b5784;
     margin: calc(10px + .5vw);
   }
@@ -149,7 +181,7 @@ img {
     line-height: 1.75;
     font-weight: 600;
     max-width: 800px;
-    margin: 0 auto calc(20px + 3.5vw);
+    margin: 0 auto calc(25px + 4.5vw);
     text-align: center;
   }
   img {
@@ -792,6 +824,10 @@ font-family: "Khula" !important;
 font-family: "Khula" !important;
 }
 
+.mobile-margin {
+  margin-top: 0;
+}
+
 //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES
 @media (min-width: 1200px) {
   #menu-close {
@@ -825,6 +861,9 @@ font-family: "Khula" !important;
   //   text-align: left;
   //
   // }
+  .mobile-margin {
+    margin-top: 45px;
+  }
   .mobile-no-show {
     display: none;
   }
@@ -839,4 +878,11 @@ font-family: "Khula" !important;
 @media (max-width: 992px) { }
 
 // Extra large devices (large desktops, 1200px and down)
-@media (max-width: 1200px) { }
+@media (max-width: 1200px) {
+
+    header {
+        background-position: center center !important;
+        background-attachment: scroll !important;
+    }
+
+  }
