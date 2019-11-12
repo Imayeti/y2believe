@@ -147,6 +147,41 @@ img {
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
+
+//MODAL MODAL MODAL
+
+.modal {
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: 0;
+  background-color: transparent !important;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: none;
+  .close {
+     text-align: right;
+    font-size: calc(30px + 1vw);
+    margin-top: -2.5vw;
+    margin-right: -1.5vw;
+    color: white !important;
+
+  }
+
+}
+
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+    width: calc(100px + 70vw);
+}
+
+
 .header-home-gradient {
   width: 25%;
   min-width: 180px;
@@ -860,6 +895,22 @@ font-family: "Khula" !important;
 }
 
 //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES //MEDIA QUERIES
+@media screen and (min-width: 768px) {
+
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 2000px !important;
+  }
+}
+
 @media (min-width: 1200px) {
   #menu-close {
     display: none;

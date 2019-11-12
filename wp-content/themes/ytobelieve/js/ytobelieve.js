@@ -34,7 +34,7 @@ $(document).ready(function()
 	$("#menu-close").click(function(e)							//declare the element event ...'(e)' = event (shorthand)
 	{
     $('#menu-toggle').stop().fadeIn(1000);
-    
+
 																// - will not work otherwise")
 		$("#sidebar-wrapper").toggleClass("active");			//instead on click event toggle active CSS element
 		e.preventDefault(); 									//prevent the default action ("Do not remove as the code
@@ -78,6 +78,11 @@ $(document).ready(function()
 
 
 
+//stop modal from playing video when exited
+  $("#myModal").on('hidden.bs.modal', function (e) {
+
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+  });
 
 
 
