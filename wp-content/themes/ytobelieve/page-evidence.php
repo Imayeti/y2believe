@@ -24,31 +24,41 @@ get_header();
 
 
 
-<section id="">
+<section id="tiled">
 
-  <?php
+<div class="row">
+
+    <?php
+      $videoNum = 0;
       $args = array(
           'post_type' => 'post'
       );
 
       $post_query = new WP_Query($args);
-      if($post_query->have_posts() ) {
+
+      if ($post_query->have_posts() ) {
         while($post_query->have_posts() ) {
           $post_query->the_post();
-          ?>
-          <h2><?php the_title(); ?></h2>
-        <!-- <iframe width="100%" height="" src="https://www.youtube.com/embed/<?php the_field('youtube_video_id'); ?>" frameborder="0" controls=0 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-
-      <div class="" style="position: relative;">
-        <div class="mobile-no-show" style="position: absolute; top: 0; left: 0; width:100%; height:100%;z-index:2" data-toggle="modal" data-target="#myModal"></div>
-          <iframe style="" src="https://www.youtube.com/embed/<?php the_field('youtube_video_id') ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    ?>
 
 
 
 
-      <div class="modal fade "  id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <?php if (get_field('youtube_video_id')) : $videoNum++;?>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4">
+
+
+      <div class="tile" style="position: relative; width: 100%;">
+        <div class="mobile-no-show" style="position: absolute; top: 0; left: 0; width:100%; height:100%;z-index:2" data-toggle="modal" data-target="#myModal<?=$videoNum?>"></div>
+        <iframe style="" src="https://www.youtube.com/embed/<?php the_field('youtube_video_id') ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h6><?php the_title(); ?></h6>
+        <h5 class="blue-text font-weight-bold">Watch Video<i class="fas fa-chevron-right"></i></h5>
+
+      </div>
+
+
+      <div class="modal fade "  id="myModal<?=$videoNum?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -62,12 +72,44 @@ get_header();
         </div>
       </div>
 
+
+    </div>
+
+    <?php endif; ?>
+
+
+
+    <?php if (get_field('article_link')) :?>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4">
+
+
+      <div class="tile" style="position: relative; width: 100%; height:100%">
+        <a href="<?php the_field('article_link'); ?>" target="_blank" class="mobile-no-show" style="position: absolute; top: 0; left: 0; width:100%; height:100%;z-index:2" ></a>
+        <div class="article-bg-pic" style="background-image: url('<?php the_post_thumbnail_url() ?>');" ></div>
+        <h6><?php the_title(); ?></h6>
+        <h5 class="blue-text font-weight-bold">Read Article<i class="fas fa-chevron-right"></i></h5>
+
+      </div>
+
+
+
+
+
+    </div>
+
+    <?php endif; ?>
+
+
       <?php
     }
   }
   ?>
   <?php wp_reset_postdata() ?>
   <?php wp_reset_query() ?>
+
+</div>
+
 </section>
 
 

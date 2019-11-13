@@ -112,6 +112,37 @@ button:active {
 img {
   width: 200px; }
 
+#tiled {
+  transition: all ease 0.3s;
+  padding: calc(20px + 3.5vw); }
+  #tiled h6 {
+    padding: calc(10px + .5vw) calc(10px + .5vw) calc(5px + .3vw) 5px; }
+  #tiled h5 {
+    transition: all ease 0.3s;
+    padding: 0 0 5px 5px; }
+  #tiled .fa-chevron-right {
+    transition: all ease 0.3s;
+    position: relative;
+    left: 5px;
+    font-size: 12px; }
+  #tiled iframe {
+    width: 100%; }
+  #tiled .tile {
+    transition: all ease 0.3s;
+    display: inline-block; }
+    #tiled .tile:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px 15px #cfcfcf; }
+      #tiled .tile:hover h5 {
+        letter-spacing: 3.5px; }
+      #tiled .tile:hover .fa-chevron-right {
+        left: 10px; }
+  #tiled .article-bg-pic {
+    height: 150px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover; }
+
 .modal {
   text-align: center; }
 
@@ -274,7 +305,8 @@ footer {
 
 .header-about-us {
   position: relative;
-  min-height: 40vh; }
+  min-height: 40vh;
+  max-height: 65vh; }
   .header-about-us h1 {
     display: inline-block;
     margin: 25vh auto;
@@ -287,7 +319,8 @@ footer {
 
 .header-process {
   position: relative;
-  min-height: 40vh; }
+  min-height: 40vh;
+  max-height: 65vh; }
   .header-process h1 {
     display: inline-block;
     margin: 25vh auto;

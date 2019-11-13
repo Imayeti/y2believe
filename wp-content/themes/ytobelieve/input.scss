@@ -148,6 +148,59 @@ img {
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
 
+#tiled {
+  transition: $ease;
+  // display: inline-block;
+  padding: calc(20px + 3.5vw);
+
+
+  h6 {
+    padding: calc(10px + .5vw) calc(10px + .5vw) calc(5px + .3vw) 5px;
+  }
+  h5 {
+    transition: $ease;
+    padding: 0 0 5px 5px;
+
+  }
+
+  .fa-chevron-right{
+    transition: $ease;
+    position: relative;
+    left: 5px;
+    font-size: 12px;
+
+  }
+  iframe {
+    width: 100%;
+  }
+  .tile {
+    transition: $ease;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px 15px #cfcfcf;
+      h5 {
+        letter-spacing: 3.5px;
+
+      }
+      .fa-chevron-right{
+        left: 10px;
+      }
+    }
+  }
+
+  .article-bg-pic {
+    height: 150px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+}
+
+
 //MODAL MODAL MODAL
 
 .modal {
@@ -383,6 +436,7 @@ footer {
   @extend %header;
   position: relative;
   min-height: 40vh;
+  max-height: 65vh;
 
   h1 {
 
@@ -403,6 +457,7 @@ footer {
   @extend %header;
   position: relative;
   min-height: 40vh;
+  max-height: 65vh;
 
   h1 {
 

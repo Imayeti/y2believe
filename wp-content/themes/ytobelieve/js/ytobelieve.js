@@ -79,12 +79,10 @@ $(document).ready(function()
 
 
 //stop modal from playing video when exited
-  $("#myModal").on('hidden.bs.modal', function (e) {
-
-    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
-  });
 
 
+
+$("[id^=myModal]").on('hidden.bs.modal', function (e) { var $this = $(this); var $frame = $this.find('iframe'); $frame.attr("src", $frame.attr("src")); });
 
 
 
