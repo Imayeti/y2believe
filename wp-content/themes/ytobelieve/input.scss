@@ -151,7 +151,7 @@ img {
 
     display: block;
     margin: calc(50px + 6.5vw) auto;
-    width: 500px;
+    width: 50vw;
 
   video {
     width: 100%
@@ -1014,6 +1014,10 @@ font-family: "Khula" !important;
 
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px) {
+  .video {
+
+      width: 90vw;
+    }
   // .vision p {
   //   text-align: left;
   //

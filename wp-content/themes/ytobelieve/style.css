@@ -115,7 +115,7 @@ img {
 .video {
   display: block;
   margin: calc(50px + 6.5vw) auto;
-  width: 500px; }
+  width: 50vw; }
   .video video {
     width: 100%; }
 
@@ -713,6 +713,9 @@ footer {
     background-attachment: scroll;
     padding: 20px; } }
 @media (max-width: 768px) {
+  .video {
+    width: 90vw; }
+
   .mobile-margin {
     margin-top: 45px; }
 
