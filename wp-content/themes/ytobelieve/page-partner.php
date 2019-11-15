@@ -23,8 +23,13 @@ get_header();
 </header>
 
 
-<h3 class="text-center" style="margin: 300px;">Coming Soon!</h3>
+<!-- <h3 class="text-center" style="margin: 300px;">Coming Soon!</h3>
+ -->
+<div class="video">
+  <video src="/wp-content/uploads/2019/11/Growth-of-Religions.mp4" poster="" controls>
 
+  </video>
+</div>
 
 
 
