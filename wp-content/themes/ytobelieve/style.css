@@ -1,4 +1,4 @@
-.header-home, .header-about-us, .header-process {
+.header-home, .header-page {
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
@@ -112,9 +112,22 @@ button:active {
 img {
   width: 200px; }
 
+.locations {
+  display: block;
+  width: fit-content;
+  margin: 0 auto; }
+  .locations hr {
+    height: 5px; }
+
+.partner-text {
+  padding: calc(30px + 4.5vw); }
+  .partner-text p {
+    max-width: 800px;
+    margin: calc(10px + .5vw) auto; }
+
 .video {
   display: block;
-  margin: calc(50px + 6.5vw) auto;
+  margin: calc(10px + .5vw) auto calc(50px + 6.5vw) auto;
   width: 50vw; }
   .video video {
     width: 100%; }
@@ -209,10 +222,18 @@ img {
   min-width: 20px;
   margin: 0 auto; }
 
+.hr-full {
+  height: 2px;
+  background-color: #0b5784;
+  width: 80%;
+  min-width: 20px;
+  margin: 0 auto; }
+
 #about-us {
   padding: calc(30px + 5vw) calc(10px + 1.5vw); }
   #about-us h4 {
-    margin: calc(15px + 2vw); }
+    max-width: 1200px;
+    margin: calc(15px + 2vw) auto; }
 
 .blue-text {
   color: #0b5784; }
@@ -317,25 +338,11 @@ footer {
     letter-spacing: 3.5px;
     font-size: calc(20px + 2vw); }
 
-.header-about-us {
+.header-page {
   position: relative;
   min-height: 40vh;
   max-height: 65vh; }
-  .header-about-us h1 {
-    display: inline-block;
-    margin: 25vh auto;
-    padding: 0 10px;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-family: "Khula", sans-serif;
-    font-weight: bold;
-    letter-spacing: 3.5px;
-    font-size: calc(22px + 2.5vw); }
-
-.header-process {
-  position: relative;
-  min-height: 40vh;
-  max-height: 65vh; }
-  .header-process h1 {
+  .header-page h1 {
     display: inline-block;
     margin: 25vh auto;
     padding: 0 10px;
@@ -713,6 +720,12 @@ footer {
     background-attachment: scroll;
     padding: 20px; } }
 @media (max-width: 768px) {
+  .header-page {
+    min-height: 30vh;
+    max-height: 35vh; }
+    .header-page h1 {
+      margin: 15vh auto; }
+
   .video {
     width: 90vw; }
 

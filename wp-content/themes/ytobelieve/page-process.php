@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
-<header class="header-process text-center" style="background-image: url('/wp-content/uploads/2019/08/Prayer-tent-openingV4-1.jpg')">
+<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/08/Prayer-tent-openingV4-1.jpg')">
   <div class="header-gradient"></div>
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Process</h1>

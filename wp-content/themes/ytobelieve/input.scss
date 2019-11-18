@@ -147,10 +147,34 @@ img {
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
+.locations {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  h3{
+
+
+
+  }
+  hr {
+    height: 5px;
+
+  }
+
+}
+
+.partner-text {
+  padding: calc(30px + 4.5vw);
+  p {
+    max-width: 800px;
+    margin: calc(10px + .5vw) auto;
+  }
+}
+
 .video {
 
     display: block;
-    margin: calc(50px + 6.5vw) auto;
+    margin: calc(10px + .5vw) auto calc(50px + 6.5vw) auto;
     width: 50vw;
 
   video {
@@ -288,11 +312,19 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
 
   margin: 0 auto;
 }
+.hr-full {
+  height: 2px;
+  background-color: $blue-text;
+  width: 80%;
+  min-width: 20px;
+  margin: 0 auto;
+}
 #about-us {
   padding: calc(30px + 5vw) calc(10px + 1.5vw)  ;
   h4 {
+    max-width: 1200px;
 
-    margin: calc(15px + 2vw);
+    margin: calc(15px + 2vw) auto;
   }
 }
 .blue-text {
@@ -452,7 +484,7 @@ footer {
   }
 }
 
-.header-about-us {
+.header-page {
   @extend %header;
   position: relative;
   min-height: 40vh;
@@ -473,26 +505,7 @@ footer {
   }
 }
 
-.header-process{
-  @extend %header;
-  position: relative;
-  min-height: 40vh;
-  max-height: 65vh;
 
-  h1 {
-
-    display: inline-block;
-    margin: 25vh auto;
-    padding: 0 10px;
-
-    color: rgba(255,255,255,.9) !important;
-
-    font-family: $sans;
-    font-weight: bold;
-    letter-spacing: 3.5px;
-    font-size: calc(22px + 2.5vw);
-  }
-}
 
 #arrows {
     padding: calc(20px + 5vw);
@@ -1014,6 +1027,15 @@ font-family: "Khula" !important;
 
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px) {
+  .header-page {
+    min-height: 30vh;
+    max-height: 35vh;
+
+      h1 {
+        margin: 15vh auto;
+      }
+
+  }
   .video {
 
       width: 90vw;
