@@ -147,6 +147,10 @@ img {
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
+.desktop-padding-left {
+  padding-left: calc(25px + 1vw);
+}
+
 .locations {
   display: block;
   width: fit-content;
@@ -160,6 +164,10 @@ img {
     height: 5px;
 
   }
+
+}
+
+.address {
 
 }
 
@@ -1046,6 +1054,12 @@ font-family: "Khula" !important;
   // }
   .mobile-margin {
     margin-top: 45px;
+  }
+  .mobile-margin-top {
+    margin-top: calc(20px + 2vw);
+  }
+  .desktop-padding-left {
+      padding-left: 15px;
   }
   .mobile-no-show {
     display: none;

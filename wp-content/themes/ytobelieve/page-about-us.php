@@ -71,9 +71,9 @@ get_header();
        map = new google.maps.Map(document.getElementById('map'), {
          center: {lat: 26.424370, lng: -90.423657},
          zoom: 5,
-         disableDefaultUI: true,
+         disableDefaultUI: false,
          mapTypeControl: false,
-            gestureHandling: 'cooperative',
+         gestureHandling: 'cooperative',
          styles:
 
 
@@ -192,7 +192,6 @@ get_header();
 
 
 
-
               var infowindow2 = new google.maps.InfoWindow({
                   content: createContent('New Horizons Estero UMC')
               });
@@ -205,7 +204,6 @@ get_header();
               marker2.addListener('click', function() {
                 infowindow2.open(map, marker2);
               });
-
 
 
 
@@ -225,7 +223,6 @@ get_header();
 
 
 
-
               var infowindow4 = new google.maps.InfoWindow({
                  content: createContent('New Horizons St Monica\'s')
               });
@@ -238,6 +235,7 @@ get_header();
               marker4.addListener('click', function() {
                 infowindow4.open(map, marker4);
               });
+
      }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ5lxj8t0vjhHUJTjr_68MF2qt-Lks8lY&callback=initMap"

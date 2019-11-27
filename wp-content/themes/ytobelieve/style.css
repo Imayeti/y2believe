@@ -112,6 +112,9 @@ button:active {
 img {
   width: 200px; }
 
+.desktop-padding-left {
+  padding-left: calc(25px + 1vw); }
+
 .locations {
   display: block;
   width: fit-content;
@@ -731,6 +734,12 @@ footer {
 
   .mobile-margin {
     margin-top: 45px; }
+
+  .mobile-margin-top {
+    margin-top: calc(20px + 2vw); }
+
+  .desktop-padding-left {
+    padding-left: 15px; }
 
   .mobile-no-show {
     display: none; }
