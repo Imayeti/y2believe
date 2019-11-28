@@ -233,9 +233,10 @@ img {
   margin: 0 auto; }
 
 #about-us {
-  padding: calc(30px + 5vw) calc(10px + 1.5vw); }
+  padding: calc(30px + 5vw) calc(0px + 9.5vw); }
   #about-us h4 {
     max-width: 1200px;
+    font-size: calc(12px + .6vw);
     margin: calc(15px + 2vw) auto; }
 
 .blue-text {
