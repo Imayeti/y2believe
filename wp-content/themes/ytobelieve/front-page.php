@@ -15,8 +15,9 @@
 get_header();
 ?>
 
-<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/11/Tyler-teaching-2BLUE.jpg')">
+<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/12/MB-MG-PR3-2.jpeg')">
 
+  <div class="header-blue-gradient"></div>
   <div class="header-home-gradient"></div>
 
 

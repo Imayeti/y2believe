@@ -16,7 +16,8 @@ get_header();
 ?>
 
 
-<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/11/Prayer-tent-worship-at-Thrive-2.jpg')">
+<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/12/MB-MG-PR2-2.jpeg')">
+  <div class="header-blue-gradient"></div>
   <div class="header-gradient"></div>
   <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"  class="text-white " >Partner</h1>
 
