@@ -60,7 +60,18 @@ get_header();
   <video src="/wp-content/uploads/2019/11/Growth-of-Religions.mp4" poster="" controls>
 
   </video>
+
+
 </div>
+
+
+<h1 class="text-center">Article</h1>
+<a href="https://www.christianpost.com/news/suicide-rate-kids-ages-10-to-14-nearly-tripled-last-decade-cdc.html">
+  <div class="text-center temp-article rmb-5">
+    <h3 class="text-center">Suicide rate for kids ages 10 to 14 nearly tripled in last decade: CDC</h3>
+    <img src="/wp-content/uploads/2019/12/123669_w_760_664.jpg" alt="">
+  </div>
+</a>
 
 
 

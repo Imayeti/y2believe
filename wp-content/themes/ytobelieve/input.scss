@@ -147,6 +147,18 @@ img {
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
 
+.temp-article {
+
+    margin-bottom: calc(50px + 2.5vw);
+
+  h3 {
+    text-decoration: none;
+    color: $blue !important;
+    max-width: 600px;
+    margin: calc(20px + 1.5vw) auto;
+  }
+}
+
 .desktop-padding-left {
   padding-left: calc(25px + 1vw);
 }
@@ -182,7 +194,7 @@ img {
 .video {
 
     display: block;
-    margin: calc(10px + .5vw) auto calc(50px + 6.5vw) auto;
+    margin: calc(10px + .5vw) auto calc(50px + 1.5vw) auto;
     width: 50vw;
 
   video {

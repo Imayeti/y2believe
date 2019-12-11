@@ -199,7 +199,7 @@ get_header();
               var marker2 = new google.maps.Marker({
                 position: highSchoolTwo,
                 map: map,
-             icon: ''
+                icon: ''
               });
               marker2.addListener('click', function() {
                 infowindow2.open(map, marker2);
@@ -215,7 +215,7 @@ get_header();
               var marker3 = new google.maps.Marker({
                 position: highSchoolThree,
                 map: map,
-             icon: ''
+                icon: ''
               });
               marker3.addListener('click', function() {
                 infowindow3.open(map, marker3);
@@ -230,7 +230,7 @@ get_header();
               var marker4 = new google.maps.Marker({
                 position: highSchoolFour,
                 map: map,
-             icon: ''
+                icon: ''
               });
               marker4.addListener('click', function() {
                 infowindow4.open(map, marker4);
