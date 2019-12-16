@@ -619,7 +619,12 @@ footer {
   min-height: 20vh;
   background-attachment: fixed;
   background-position: center center;
-  padding: calc(10px + 5vw) calc(20px + 10vw) ;
+  padding: calc(10px + 5vw) 5px ;
+
+}
+#testimonial_rotator_wrap_21{
+  max-width: 1000px;
+  margin: 0 auto;
 
 }
 
@@ -629,7 +634,12 @@ footer {
     color: white;
   }
 }
-
+.testimonial_rotator_quote {
+  font-size: calc(10px + .6vw);
+}
+.testimonial_rotator_author_info {
+  font-size: calc(10px + .6vw);
+}
 #headline-bg {
 
   .headline-bg-pic {

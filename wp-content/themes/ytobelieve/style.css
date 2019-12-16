@@ -423,12 +423,22 @@ footer {
   min-height: 20vh;
   background-attachment: fixed;
   background-position: center center;
-  padding: calc(10px + 5vw) calc(20px + 10vw); }
+  padding: calc(10px + 5vw) 5px; }
+
+#testimonial_rotator_wrap_21 {
+  max-width: 1000px;
+  margin: 0 auto; }
 
 .testimonial_rotator_prev, .testimonial_rotator_next, .testimonial_rotator_prev, .testimonial_rotator_next {
   color: rgba(255, 255, 255, 0.6); }
   .testimonial_rotator_prev:hover, .testimonial_rotator_next:hover, .testimonial_rotator_prev:hover, .testimonial_rotator_next:hover {
     color: white; }
+
+.testimonial_rotator_quote {
+  font-size: calc(10px + .6vw); }
+
+.testimonial_rotator_author_info {
+  font-size: calc(10px + .6vw); }
 
 #headline-bg .headline-bg-pic {
   display: flex;
