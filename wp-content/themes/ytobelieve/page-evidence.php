@@ -16,20 +16,18 @@ get_header();
 ?>
 
 
-<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/11/Michael-with-students.jpg')">
+<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/12/Michael-with-students.jpg')">
+  <div class="header-blue-gradient"></div>
   <div class="header-gradient"></div>
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Evidence</h1>
 
 </header>
 
 <section class=" ">
-  <p class="top-paragraph mt-0 blue-text big-p mb-0" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
-  The following links to scientific articles and videos are for demonstrative purposes to aid students in comprehending major Christian apologetics concepts including the origin of life and the origin of the universe. This survey of videos and articles were not produced or written by Y2Believe, but we believe they are instructional and useful in helping students grasp complex ideas including the immense complexity of life and the uniqueness of planet Earth in a universe fine-tuned to levels of precision that are astounding and utterly unfathomable.<br> <br>Any scientific or theological views expressed or implied in the links are solely those of the authors and do not necessarily represent the views held by Y2Believe, yet we provide them for the edification of students seeking to understand the most profound mysteries of origins that are easily explained by God, but baffling conundrums defying naturalistic explanations.
-  </p>
+  <div class="top-paragraph mt-0 blue-text big-p mb-0" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+    <?php the_field('main_text'); ?>
+  </div>
   <div data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="hr-medium"></div>
-
-
-
 </section>
 
 

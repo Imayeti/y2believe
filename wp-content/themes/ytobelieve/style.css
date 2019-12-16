@@ -220,6 +220,15 @@ img {
   background: #305683;
   background: linear-gradient(90deg, rgba(48, 86, 131, 0.8) 100%, rgba(7, 85, 130, 0.5340511204) 100%); }
 
+.red-bg-gradient {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #305683;
+  background: linear-gradient(90deg, rgba(103, 38, 50, 0.8) 100%, rgba(166, 24, 50, 0.5340511204) 100%); }
+
 .header-gradient {
   width: 25%;
   min-width: 180px;
@@ -254,10 +263,12 @@ img {
 
 #about-us {
   padding: calc(30px + 5vw) calc(0px + 9.5vw); }
-  #about-us h4 {
+  #about-us h4 p {
     max-width: 1200px;
     font-size: calc(12px + .6vw);
     margin: calc(15px + 2vw) auto; }
+    #about-us h4 p strong {
+      color: #305683; }
 
 .blue-text {
   color: #0b5784; }
@@ -269,14 +280,24 @@ img {
   font-size: calc(15px + .25vw);
   line-height: 1.75;
   font-weight: 600;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto calc(25px + 4.5vw);
   text-align: center;
   padding: 0 calc(33px + .9vw); }
+  .big-p p {
+    font-size: calc(15px + .25vw);
+    line-height: 1.75;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto calc(10px + .5vw);
+    text-align: center;
+    padding: 0 calc(33px + .9vw);
+    color: #305683;
+    font-size: calc(11px + .24vw); }
 
 .top-paragraph {
   padding-top: calc(28px + 4vw);
-  padding-bottom: calc(25px + 2.3vw);
+  padding-bottom: calc(15px + 1vw);
   font-size: calc(11px + .24vw); }
 
 .why-how {
@@ -377,7 +398,7 @@ footer {
     font-size: calc(22px + 2.5vw); }
 
 #arrows {
-  padding: calc(20px + 5vw); }
+  padding: calc(30px + 8vw) calc(20px + 5vw); }
   #arrows img {
     width: calc(70px + 7vw); }
   #arrows .right-arrow {
@@ -396,12 +417,18 @@ footer {
       max-width: 500px;
       font-weight: 500; }
 
-#testimonials .testimonial-pic {
+.testimonial-pic {
+  position: relative;
   background-size: cover;
   min-height: 20vh;
   background-attachment: fixed;
   background-position: center center;
-  padding: calc(20px + 8vw) calc(40px + 10vw); }
+  padding: calc(10px + 5vw) calc(20px + 10vw); }
+
+.testimonial_rotator_prev, .testimonial_rotator_next, .testimonial_rotator_prev, .testimonial_rotator_next {
+  color: rgba(255, 255, 255, 0.6); }
+  .testimonial_rotator_prev:hover, .testimonial_rotator_next:hover, .testimonial_rotator_prev:hover, .testimonial_rotator_next:hover {
+    color: white; }
 
 #headline-bg .headline-bg-pic {
   display: flex;
