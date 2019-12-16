@@ -135,6 +135,8 @@ img {
   .partner-text p {
     max-width: 800px;
     margin: calc(10px + .5vw) auto; }
+    .partner-text p strong {
+      color: #305683; }
 
 .video {
   display: block;

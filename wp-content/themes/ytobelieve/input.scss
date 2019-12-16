@@ -188,6 +188,9 @@ img {
   p {
     max-width: 800px;
     margin: calc(10px + .5vw) auto;
+    strong{
+      color: $blue;
+    }
   }
 }
 
