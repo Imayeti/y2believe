@@ -166,6 +166,7 @@ img {
 .locations {
   display: block;
   width: fit-content;
+  max-width: 500px;
   margin: 0 auto;
   h3{
 
@@ -206,19 +207,27 @@ img {
 }
 
 
+
 #tiled {
+  position: relative;
   transition: $ease;
-  // display: inline-block;
   padding: calc(15px + 1.2vw) calc(20px + 3.5vw) calc(20px + 3.5vw) calc(20px + 3.5vw);
 
 
   h6 {
     padding: calc(10px + .5vw) calc(10px + .5vw) calc(5px + .3vw) 5px;
+    text-align: left;
   }
   h5 {
     transition: $ease;
     padding: 0 0 5px 5px;
+    text-align: left;
 
+  }
+
+  #youtubeVid {
+    height: 85vh;
+    width: 100%;
   }
 
   .fa-chevron-right{
@@ -229,9 +238,12 @@ img {
 
   }
   iframe {
-    width: 100%;
+    width: 300px;
+    height: 200px;
   }
   .tile {
+    width: 300px;
+    height: 200px;
     transition: $ease;
     display: inline-block;
 
@@ -249,14 +261,24 @@ img {
   }
 
   .article-bg-pic {
-    height: 150px;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
 
 }
+
+.thumbnail-container {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  z-index:2
+}
+
 
 
 //MODAL MODAL MODAL
@@ -289,7 +311,7 @@ img {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-    width: calc(100px + 70vw);
+  width: calc(100px + 70vw);
 }
 
 
@@ -297,25 +319,18 @@ img {
   width: 25%;
   min-width: 180px;
   position: absolute;
-  /* background: grey; */
   bottom: 0;
   height: 100vh;
   left: 0;
-  // background: transparent;
-
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
 }
 .header-blue-gradient {
   width: 100%;
-
   position: absolute;
-  /* background: grey; */
   bottom: 0;
   height: 100%;
   left: 0;
-  // background: transparent;
-
   background: rgb(48,86,131);
   background: linear-gradient(90deg, rgba(48,86,131,0.8) 100%, rgba(7,85,130,0.5340511204481793) 100%);
 }
@@ -332,14 +347,11 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
   width: 25%;
   min-width: 180px;
   position: absolute;
-  /* background: grey; */
   bottom: 0;
   height: 100vh;
   left: 0;
-  // background: transparent;
-
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgba(0,0,0,0) 100%);
 }
 
 .hr-small {
@@ -429,8 +441,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
   }
 }
 
-//arrow bounce
-//
+
 .sans {
   font-family: $sans;
 }
@@ -449,8 +460,6 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
 }
 
 .header-image {
-  // padding: calc(10px + .5vw);
-  // margin: calc(10px + .5vw);
   .logo {
     z-index: 2147483638;
     position: fixed;
@@ -460,10 +469,6 @@ background: linear-gradient(90deg, rgba(255,255,255,0.38699229691876746) 0%, rgb
   }
 }
 
-header {
-  // padding: calc(10px + .5vw);
-  // margin: calc(20px + 7.5vw);
-}
 
 .fa-chevron-down {
   transition: $ease;
@@ -504,10 +509,9 @@ header {
 
 footer {
   padding: calc(20px + 2vw) calc(30px + 5vw);
-
   background-color:#0d1a23;
-
   color: #a5a2a2;
+
   h6 {
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -530,16 +534,15 @@ footer {
 .header-home {
   @extend %header;
   position: relative;
-
+  background-position: top right;
 
   h1 {
-
+    z-index: 12727;
     display: inline-block;
     margin: 25vh auto;
     padding: 12px 10px 0px;;
     border: 3px solid white;
     color: rgba(255,255,255,.9) !important;
-
     font-family: $sans;
     font-weight: bold;
     letter-spacing: 3.5px;
@@ -550,7 +553,7 @@ footer {
 .header-page {
   @extend %header;
   position: relative;
-  min-height: 40vh;
+  min-height: 60vh;
   max-height: 65vh;
 
   h1 {
@@ -558,13 +561,19 @@ footer {
     display: inline-block;
     margin: 25vh auto;
     padding: 0 10px;
-
+    z-index: 12755;
     color: rgba(255,255,255,.9) !important;
 
     font-family: $sans;
     font-weight: bold;
     letter-spacing: 3.5px;
     font-size: calc(22px + 2.5vw);
+  }
+  .evidence_h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 
@@ -1085,7 +1094,7 @@ font-family: "Khula" !important;
   .header-home {
 
     background-attachment: scroll;
-    background-position: -200px;
+
   }
   #testimonials {
     .testimonial-pic {
@@ -1106,6 +1115,15 @@ font-family: "Khula" !important;
   .header-page {
     min-height: 30vh;
     max-height: 35vh;
+
+      h1 {
+        margin: 15vh auto;
+      }
+
+  }
+  .header-home {
+    min-height: 50vh;
+    max-height: 55vh;
 
       h1 {
         margin: 15vh auto;
@@ -1146,8 +1164,12 @@ font-family: "Khula" !important;
 @media (max-width: 1200px) {
 
     header {
-        background-position: center center !important;
+        background-position: center center ;
         background-attachment: scroll !important;
+    }
+    .testimonial-pic {
+      background-position: center center ;
+      background-attachment: scroll;
     }
 
   }

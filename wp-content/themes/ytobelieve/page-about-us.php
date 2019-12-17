@@ -43,15 +43,12 @@ get_header();
   <h4 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="text-center"><?php the_field('develops'); ?></h4>
 
 </section>
+
 <div class="dark-bg"  >
   <div class="locations">
     <div class="hr-full  ">  </div>
-
-
-      <h2 class="text-center rmy-1 pt-1 ">Current Locations</h2>
-
+      <h2 class="text-center rmy-1 pt-1">Current Locations</h2>
     <div class="hr-full  ">  </div>
-
   </div>
 </div>
 
@@ -59,10 +56,17 @@ get_header();
 <h5 class="text-center"></h5>
 
 
-<div class="map-responsive">
-     <div class="rmt-5" id="map"></div>
-   </div>
+ <div class="map-responsive">
+   <div class="rmt-5" id="map"></div>
+ </div>
+
    <script>
+    
+    function createMapPins(lat, lng) {
+
+    }
+
+
      var map;
      function initMap() {
 
