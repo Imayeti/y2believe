@@ -61,14 +61,57 @@ get_header();
  </div>
 
    <script>
-    
-    function createMapPins(lat, lng) {
+
+   // var fruits = ["apple", "orange", "cherry"];
+   //  fruits.forEach(myFunction);
+
+    function myFunction(item, index) {
+      console.log(item, index);;
+    }
+
+   var allSchoolsArray = [{school: 'this is school1', position: {lat: 26.295558, lng: -81.577654}}, {school: 'this is school2', position: {lat: 26.424370, lng: -81.423657}}];
+
+
+    allSchoolsArray.forEach(createMapPins);
+
+   function createContent(heading, info) {
+     return '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h5 id="firstHeading" class="firstHeading sans">' + heading + '</h5>'+
+                '<div id="bodyContent">'+
+                '<p class="sans text-center" style="text-align: center"></p>'+
+
+                '</div>'+
+                '</div>';
+   }
+
+
+    function createMapPins(schoolData,index) {
+      console.log(schoolData.school);
+      console.log(schoolData.position);
+
+      console.log(index);
+
+      // var infowindow = new google.maps.InfoWindow({
+      //   content: createContent(schoolData.school)
+      // });
+      //
+      // var marker = new google.maps.Marker({
+      //   position: schoolData.position,
+      //   map: map,
+      //  icon: ''
+      //   });
+      // marker.addListener('click', function() {
+      //   infowindow.open(map, marker);
+      // });
 
     }
 
-
      var map;
      function initMap() {
+
+
 
        var highSchoolOne = {lat: 26.295558, lng: -81.577654};
        var highSchoolTwo = {lat: 26.424370, lng: -81.423657};
@@ -167,80 +210,6 @@ get_header();
 
 
        });
-
-       //todo: add a function that creates all markers from an array of names. eventually create a way to add a new marker including lat and long.
-        function createContent(heading, info) {
-          return '<div id="content">'+
-                     '<div id="siteNotice">'+
-                     '</div>'+
-                     '<h5 id="firstHeading" class="firstHeading sans">' + heading + '</h5>'+
-                     '<div id="bodyContent">'+
-                     '<p class="sans text-center" style="text-align: center"></p>'+
-
-                     '</div>'+
-                     '</div>';
-        }
-
-              var infowindow = new google.maps.InfoWindow({
-                content: createContent('Palmetto Ridge High School')
-              });
-
-              var marker = new google.maps.Marker({
-                position: highSchoolOne,
-                map: map,
-             icon: ''
-              });
-              marker.addListener('click', function() {
-                infowindow.open(map, marker);
-              });
-
-
-
-
-
-              var infowindow2 = new google.maps.InfoWindow({
-                  content: createContent('New Horizons Estero UMC')
-              });
-
-              var marker2 = new google.maps.Marker({
-                position: highSchoolTwo,
-                map: map,
-                icon: ''
-              });
-              marker2.addListener('click', function() {
-                infowindow2.open(map, marker2);
-              });
-
-
-
-
-              var infowindow3 = new google.maps.InfoWindow({
-                content: createContent('Immokalee High School')
-              });
-
-              var marker3 = new google.maps.Marker({
-                position: highSchoolThree,
-                map: map,
-                icon: ''
-              });
-              marker3.addListener('click', function() {
-                infowindow3.open(map, marker3);
-              });
-
-
-
-              var infowindow4 = new google.maps.InfoWindow({
-                 content: createContent('New Horizons St Monica\'s')
-              });
-
-              var marker4 = new google.maps.Marker({
-                position: highSchoolFour,
-                map: map,
-                icon: ''
-              });
-              marker4.addListener('click', function() {
-                infowindow4.open(map, marker4);
-              });
 
      }
    </script>
