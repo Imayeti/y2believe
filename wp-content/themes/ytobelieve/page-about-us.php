@@ -60,19 +60,35 @@ get_header();
    <div class="rmt-5" id="map"></div>
  </div>
 
+  <?php
+
+    $allSchoolsArray = []
+
+   ?>
+
+  <?php  while ( have_rows('map_pin_1') ) : the_row();  ?>
+    <?php
+      // TODO: figure out how to turn this string into actual json or a javascript object
+      $allSchoolsArray[] = '{' . get_sub_field('school_name')  . ', position:{lat'   . get_sub_field('latitude') . ',lng' . get_sub_field('longitude') .'}}';
+
+      var_dump($allSchoolsArray);
+
+      echo '<script>console.log('.json_encode($allSchoolsArray).')</script>';
+     ?>
+  <?php endwhile; ?>
+  <?php  while ( have_rows('map_pin_2') ) : the_row();  ?>
+    <?php the_sub_field('school_name'); ?>
+    <?php the_sub_field('latitude'); ?>
+    <?php the_sub_field('longitude'); ?>
+  <?php endwhile; ?>
+
+
+
    <script>
 
-   // var fruits = ["apple", "orange", "cherry"];
-   //  fruits.forEach(myFunction);
-
-    function myFunction(item, index) {
-      console.log(item, index);;
-    }
 
    var allSchoolsArray = [{school: 'this is school1', position: {lat: 26.295558, lng: -81.577654}}, {school: 'this is school2', position: {lat: 26.424370, lng: -81.423657}}];
 
-
-    allSchoolsArray.forEach(createMapPins);
 
    function createContent(heading, info) {
      return '<div id="content">'+
@@ -88,30 +104,130 @@ get_header();
 
 
     function createMapPins(schoolData,index) {
-      console.log(schoolData.school);
-      console.log(schoolData.position);
 
-      console.log(index);
+      var infowindow = new google.maps.InfoWindow({
+        content: createContent(schoolData.school)
+      });
 
-      // var infowindow = new google.maps.InfoWindow({
-      //   content: createContent(schoolData.school)
-      // });
-      //
-      // var marker = new google.maps.Marker({
-      //   position: schoolData.position,
-      //   map: map,
-      //  icon: ''
-      //   });
-      // marker.addListener('click', function() {
-      //   infowindow.open(map, marker);
-      // });
+      var marker = new google.maps.Marker({
+        position: schoolData.position,
+        map: map,
+       icon: ''
+        });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
 
     }
 
+
      var map;
      function initMap() {
+       // var highSchoolOne = {lat: 26.295558, lng: -81.577654};
+       // var highSchoolTwo = {lat: 26.424370, lng: -81.423657};
+       // var highSchoolThree = {lat: 26.440823, lng: -81.809980};
+       // var highSchoolFour = {lat: 26.272427,  lng: -81.724038};
+       map = new google.maps.Map(document.getElementById('map'), {
+         center: {lat: 26.424370, lng: -90.423657},
+         zoom: 5,
+         disableDefaultUI: false,
+         mapTypeControl: false,
+         gestureHandling: 'cooperative',
+         styles:
 
 
+
+         [
+  {
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      },
+      {
+        "saturation": 100
+      },
+      {
+        "lightness": 100
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+]
+       });
+
+       allSchoolsArray.forEach(createMapPins);
+
+
+
+     }
+   </script>
+
+
+   <!-- <script>
+     var map;
+     function initMap() {
 
        var highSchoolOne = {lat: 26.295558, lng: -81.577654};
        var highSchoolTwo = {lat: 26.424370, lng: -81.423657};
@@ -211,8 +327,84 @@ get_header();
 
        });
 
+       //todo: add a function that creates all markers from an array of names. eventually create a way to add a new marker including lat and long.
+        function createContent(heading, info) {
+          return '<div id="content">'+
+                     '<div id="siteNotice">'+
+                     '</div>'+
+                     '<h5 id="firstHeading" class="firstHeading sans">' + heading + '</h5>'+
+                     '<div id="bodyContent">'+
+                     '<p class="sans text-center" style="text-align: center"></p>'+
+
+                     '</div>'+
+                     '</div>';
+        }
+
+              var infowindow = new google.maps.InfoWindow({
+                content: createContent('Palmetto Ridge High School')
+              });
+
+              var marker = new google.maps.Marker({
+                position: highSchoolOne,
+                map: map,
+             icon: ''
+              });
+              marker.addListener('click', function() {
+                infowindow.open(map, marker);
+              });
+
+
+
+
+
+              var infowindow2 = new google.maps.InfoWindow({
+                  content: createContent('New Horizons Estero UMC')
+              });
+
+              var marker2 = new google.maps.Marker({
+                position: highSchoolTwo,
+                map: map,
+                icon: ''
+              });
+              marker2.addListener('click', function() {
+                infowindow2.open(map, marker2);
+              });
+
+
+
+
+              var infowindow3 = new google.maps.InfoWindow({
+                content: createContent('Immokalee High School')
+              });
+
+              var marker3 = new google.maps.Marker({
+                position: highSchoolThree,
+                map: map,
+                icon: ''
+              });
+              marker3.addListener('click', function() {
+                infowindow3.open(map, marker3);
+              });
+
+
+
+              var infowindow4 = new google.maps.InfoWindow({
+                 content: createContent('New Horizons St Monica\'s')
+              });
+
+              var marker4 = new google.maps.Marker({
+                position: highSchoolFour,
+                map: map,
+                icon: ''
+              });
+              marker4.addListener('click', function() {
+                infowindow4.open(map, marker4);
+              });
+
      }
-   </script>
+   </script> -->
+
+
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ5lxj8t0vjhHUJTjr_68MF2qt-Lks8lY&callback=initMap"
    async defer></script>
 
