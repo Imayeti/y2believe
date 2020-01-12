@@ -7,7 +7,7 @@ Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
 Text Domain: testimonial-rotator
 Domain Path: /languages
-Version: 3.0
+Version: 3.0.1
 */
 
 
@@ -656,7 +656,8 @@ function testimonial_rotator_rating( $id = false, $return = 'stars' )
 		}
 	}
 
-	$global_rating_number = round($global_rating / $testimonial_count, 1);
+	$global_rating_number = 0;
+	if( $testimonial_count > 1 ) $global_rating_number = round($global_rating / $testimonial_count, 1);	
 
 
 	// RETURN OPTIONS

@@ -71,6 +71,9 @@ Check out this [Help Guide](https://halgatewood.com/docs/plugins/testimonial-rot
 
 == Changelog ==
 
+= 3.0.1 - November 18th, 2019 =
+* FIX: botched the update and missed a bunch of the files. Now added.
+
 = 3.0 - Oct. 28th, 2019 =
 * NEW: Theme pack merged into this plugin. Thank you for the support those how purchased the theme pack.
 
