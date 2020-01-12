@@ -113,19 +113,19 @@ get_header();
   <p class="p-padding"><?php the_field('our_beliefs'); ?></p>
 
    <div class="row belief-icons">
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-bible"></i>
       <h4>We believe the Bible is</h4>
       <h5>100% without error</h5>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-layer-group"></i>
       <h4>That includes all 66 books</h4>
       <h5>of the Old & New Testaments</h5>
 
 
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-arrow-circle-up"></i>
       <h4>Scripture is our supreme</h4>
       <h5>and final authority on all matters it addresses</h5>

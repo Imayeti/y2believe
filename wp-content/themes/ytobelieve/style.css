@@ -124,7 +124,7 @@ img {
   .accordion .btn-link {
     color: black;
     font-weight: 500;
-    font-size: calc(10px + .4vw);
+    font-size: calc(13px + .3vw);
     letter-spacing: 1px; }
   .accordion .btn-link:hover, .accordion .btn-link:focus {
     text-decoration: none;
@@ -169,7 +169,7 @@ div[aria-expanded="true"] {
   text-align: center;
   width: 80%;
   max-width: 1200px;
-  margin: calc(25px + 3vw) auto; }
+  margin: 0 auto calc(25px + 3vw); }
   .belief-icons i {
     font-size: 60px;
     color: #305683; }
