@@ -28,8 +28,11 @@ a {
   font-size: calc(14px + .2vw);
   font-family: $sans;
 }
+html {
 
+}
 body {
+  overflow-x: hidden;
 
   -webkit-font-smoothing: antialiased;
 
