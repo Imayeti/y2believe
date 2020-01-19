@@ -12,11 +12,28 @@ function closeNav() {
 
 
 
+$(document).ready(function() {
+
+
+  $('#article-sort-button').click(function(){
+    $('.video-tile').hide();
+    $('.article-tile').show();
+
+  });
+  $('#video-sort-button').click(function(){
+    $('.video-tile').show();
+    $('.article-tile').hide();
+
+  });
+  $('#all-sort-button').click(function(){
+    $('.video-tile').show();
+    $('.article-tile').show();
+  });
 
 
 
-$(document).ready(function()
-{
+
+
 
 	// Closes the sidebar menu on menu-close button click event
 	$("#menu-close").click(function(e)							//declare the element event ...'(e)' = event (shorthand)
@@ -71,6 +88,8 @@ $(document).ready(function()
 
 
 $("[id^=myModal]").on('hidden.bs.modal', function (e) { var $this = $(this); var $frame = $this.find('iframe'); $frame.attr("src", $frame.attr("src")); });
+
+
 
 
 

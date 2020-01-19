@@ -612,17 +612,49 @@ div[aria-expanded="true"]{
   }
 }
 
+.bounce {
+  .fa-chevron-down {
+    transition: $ease;
+    color: white;
+    align-self: flex-end;
+    &:hover {
+      text-decoration: none;
+      color: $red;
+    }
 
-.fa-chevron-down {
-  transition: $ease;
-  color: white;
-  align-self: flex-end;
-  &:hover {
-    text-decoration: none;
-    color: $red;
+  }
+}
+
+.sorting {
+  .fa-chevron-down {
+    transition: $ease;
+    margin-left: calc(5px + .1vw);
+    position: relative;
+    left: 0;
+    top: 0;
+
   }
 
+
+  button {
+
+    transition: $ease;
+    font-weight: bolder;
+    font-size: calc(14px + .65vw);
+    color: $blue;
+    &:hover {
+      .fa-chevron-down {
+        top: 5px;
+      }
+    }
+  }
+  h4 {
+    letter-spacing: 1px;
+    color: $blue;
+  }
 }
+
+
 
 .arrow {
   text-align: center;

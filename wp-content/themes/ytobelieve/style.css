@@ -447,13 +447,30 @@ div[aria-expanded="true"] {
   left: 25px;
   width: calc(60px + 3.2vw); }
 
-.fa-chevron-down {
+.bounce .fa-chevron-down {
   transition: all ease 0.3s;
   color: white;
   align-self: flex-end; }
-  .fa-chevron-down:hover {
+  .bounce .fa-chevron-down:hover {
     text-decoration: none;
     color: #a61832; }
+
+.sorting .fa-chevron-down {
+  transition: all ease 0.3s;
+  margin-left: calc(5px + .1vw);
+  position: relative;
+  left: 0;
+  top: 0; }
+.sorting button {
+  transition: all ease 0.3s;
+  font-weight: bolder;
+  font-size: calc(14px + .65vw);
+  color: #305683; }
+  .sorting button:hover .fa-chevron-down {
+    top: 5px; }
+.sorting h4 {
+  letter-spacing: 1px;
+  color: #305683; }
 
 .arrow {
   text-align: center;

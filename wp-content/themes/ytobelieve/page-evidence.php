@@ -29,7 +29,16 @@ get_header();
   <div class="top-paragraph mt-0 blue-text big-p mb-0" >
     <?php the_field('main_text'); ?>
   </div>
-  <div data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="hr-medium"></div>
+  <div  class="hr-medium"></div>
+  <div class="text-center sorting">
+
+
+    <button id="video-sort-button" class="rmt-4"  type="button" name="button">Videos<i class="fas fa-chevron-down"></i></button>
+    <button id="article-sort-button" class="ml-4" type="button" name="button">Articles<i class=" fas fa-chevron-down"></i></button>
+    <button id="all-sort-button" class="ml-4"  type="button" name="button">Both<i class="fas fa-chevron-down"></i></button>
+
+
+  </div>
 </section>
 
 
@@ -55,7 +64,7 @@ get_header();
 
   <?php if (get_field('youtube_video_id')) : $videoNum++;?>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4 text-center">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4 text-center video-tile">
 
       <div class="tile" >
         <div class="mobile-no-show thumbnail-container" style="" data-toggle="modal" data-target="#myModal<?=$videoNum?>"></div>
@@ -86,14 +95,13 @@ get_header();
 
     <?php if (get_field('article_link')) :?>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4 text-center">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4 text-center article-tile">
       <div class="tile">
         <a href="<?php the_field('article_link'); ?>" target="_blank" class="mobile-no-show thumbnail-container"  ></a>
         <div class="article-bg-pic" style="background-image: url('<?php the_post_thumbnail_url() ?>');" ></div>
         <h6><?php the_title(); ?></h6>
         <h5 class="blue-text font-weight-bold">Read Article<i class="fas fa-chevron-right"></i></h5>
       </div>
-
     </div>
 
     <?php endif; ?>
