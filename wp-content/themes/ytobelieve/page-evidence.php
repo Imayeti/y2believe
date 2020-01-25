@@ -49,7 +49,8 @@ get_header();
     <?php
       $videoNum = 0;
       $args = array(
-          'post_type' => 'post'
+          'post_type' => 'post',
+          'cat' => 3
       );
 
       $post_query = new WP_Query($args);

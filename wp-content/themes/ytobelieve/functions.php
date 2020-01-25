@@ -176,3 +176,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// function universityMapKey($api) {
+//   $api['key'] = 'AIzaSyBJ5lxj8t0vjhHUJTjr_68MF2qt-Lks8lY';
+//   return $api;
+// }
+//
+// add_filter('acf/fields/google_map/api', 'universityMapKey');
