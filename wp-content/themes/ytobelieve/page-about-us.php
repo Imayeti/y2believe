@@ -921,6 +921,11 @@ get_footer();
 ?>
 
 <script type="text/javascript">
-var newSchool = JSON.parse(universityData.mapPins);
-console.log(newSchool);
+var allSchoolsobject = JSON.parse(universityData.mapPins);
+
+var allSchoolsArray = [];
+allSchoolsArray.push(allSchoolsobject);
+
+
+console.log(typeof(allSchoolsArray));
 </script>
