@@ -1,16 +1,21 @@
 <?php
 
+
+
 function getPins() {
-  $myObj = new stdClass();
-  $myObj->name = "John";
-  $myObj->age = 30;
-  $myObj->city = "New York";
-  $myJSON = json_encode($myObj);
+  // TODO: just loop through the posts in the custom post type, grab the fields out and then build up the below array from that data. Almost there!!
+  $allSchools = [
+    ['school' => 'this is school1', 'position' => ['lat' => '26.295558', 'lng' => '-81.577654']],
+    ['school' => 'this is school2', 'position' => ['lat' => '26.424370', 'lng' => '-81.423657']]
+  ];
+
+  $myJSON = json_encode($allSchools);
   return $myJSON;
 }
 
 
 function localized_scripts() {
+
   wp_localize_script('ytobelieve_main_js', 'universityData', array(
     'mapPins' => getPins()
 
