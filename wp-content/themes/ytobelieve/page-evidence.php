@@ -50,7 +50,7 @@ get_header();
       $videoNum = 0;
       $args = array(
           'post_type' => 'post',
-          'cat' => 3
+          'cat' => 5
       );
 
       $post_query = new WP_Query($args);
