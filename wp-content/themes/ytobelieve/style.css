@@ -277,8 +277,7 @@ div[aria-expanded="true"] {
     transition: all ease 0.3s;
     display: inline-block; }
     #tiled .tile:hover {
-      cursor: pointer;
-      box-shadow: 5px 5px 15px #cfcfcf; }
+      cursor: pointer; }
       #tiled .tile:hover h5 {
         letter-spacing: 3.5px; }
       #tiled .tile:hover .fa-chevron-right {
