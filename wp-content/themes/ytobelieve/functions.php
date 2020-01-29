@@ -187,3 +187,58 @@ require get_theme_file_path('/inc/googleMapAPI.php');
 // }
 //
 // add_filter('acf/fields/google_map/api', 'universityMapKey');
+
+
+
+
+
+/* ==================================================
+										CUSTOM POST TYPES
+=================================================== */
+function generate_labels($singular, $plural){
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new' => 'Add New ' . $singular,
+		'add_new_item' => 'Add New ' . $singular,
+		'edit_item' => 'Edit ' . $singular,
+		'new_item' => 'New ' . $singular,
+		'view_item' => 'View ' . $singular,
+		'view_items' => 'View ' . $plural,
+		'search_items' => 'Search ' . $plural,
+		'not_found' => 'No ' . $plural . " found",
+		'not_found_in_trash' => 'No ' . $plural  . ' found in Trash',
+		'parent_item_colon' => 'Parent ' . $singular,
+		'all_items' => 'All ' . $plural,
+		'archives' => $singular . ' Archives',
+		'attributes' => $singular . ' Attributes',
+		'insert_into_item' => 'Insert into ' . $singular,
+		'upload_to_this_item' => 'Upload to this ' . $singular,
+	);
+	return $labels;
+}
+
+function register_all_custom_post_types(){
+	$singular = 'Pin';
+	$plural = 'Google Map Pins';
+	$labels = generate_labels($singular, $plural);
+
+	/* Register the People Post Type */
+	register_post_type('googleMapPins', array(
+		'supports' => array( 'title', 'page-attributes'),
+		'labels' => $labels,
+		'description' => 'This is a custom post type for adding pins to the google map',
+		'public' => true,
+		'publicly_queryable' => true,
+		'menu_icon' => 'dashicons-star-filled',
+		'capability_type' => 'post',
+		'has_archive' => true
+
+	));
+
+
+  	// remove_post_type_support('stallions', 'editor');
+
+
+	}
+	add_action('init', 'register_all_custom_post_types');
