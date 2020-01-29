@@ -28,7 +28,7 @@ function getPins() {
 
     ));
   }
-
+  wp_reset_postdata();
   // $allSchools = [
   //   ['school' => 'this is school1', 'position' => ['lat' => '26.295558', 'lng' => '-81.577654']],
   //   ['school' => 'this is school2', 'position' => ['lat' => '26.424370', 'lng' => '-81.423657']]
