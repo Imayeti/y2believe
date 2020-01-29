@@ -22,8 +22,8 @@ function getPins() {
     array_push($allSchools, array(
       'school' => $schoolName,
       'position' =>   array(
-                        'lat' => (int)$latitude,
-                        'lng' => (int)$longitude
+                        'lat' => (float)$latitude,
+                        'lng' => (float)$longitude
                       )
 
     ));
