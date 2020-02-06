@@ -841,8 +841,8 @@ function createContent(heading, info) {
     // var highSchoolThree = {lat: 26.440823, lng: -81.809980};
     // var highSchoolFour = {lat: 26.272427,  lng: -81.724038};
     map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 26.424370, lng: -90.423657},
-      zoom: 5,
+      center: {lat: 26.440823, lng: -81.809980},
+      zoom: 8,
       disableDefaultUI: false,
       mapTypeControl: false,
       gestureHandling: 'cooperative',
