@@ -143,7 +143,6 @@ add_action( 'widgets_init', 'ytobelieve_widgets_init' );
  wp_enqueue_style( 'ytobelieve-style', get_stylesheet_uri(), NULL, microtime() );
 
 
-
  	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
  		wp_enqueue_script( 'comment-reply' );
  	}
@@ -177,9 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
 require get_theme_file_path('/inc/googleMapAPI.php');
-
 
 // function universityMapKey($api) {
 //   $api['key'] = 'AIzaSyBJ5lxj8t0vjhHUJTjr_68MF2qt-Lks8lY';
@@ -187,9 +184,6 @@ require get_theme_file_path('/inc/googleMapAPI.php');
 // }
 //
 // add_filter('acf/fields/google_map/api', 'universityMapKey');
-
-
-
 
 
 /* ==================================================
@@ -242,7 +236,3 @@ function register_all_custom_post_types(){
 
 	}
 	add_action('init', 'register_all_custom_post_types');
-
-
-
-	
