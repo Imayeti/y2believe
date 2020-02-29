@@ -28,8 +28,21 @@ get_header();
 <section class=" ">
   <div class="top-paragraph mt-0 blue-text big-p mb-0" >
     <?php the_field('main_text'); ?>
+
   </div>
-  <div  class="hr-medium"></div>
+  <div class="right-now-media ">
+    <p>Students seeking more evidence or wanting to learn more reasons Why To Believe can enter the Student Login Portal to view Y2B recommended materials from a vast library of free resources designed to help you grow in your faith.</p>
+    <div class="text-center rmt-3 student-login-button">
+
+    </div>
+    <div class="text-center">
+      <button class="y2-button" type="button" >
+            <a href="<?php echo site_url('right-now-media-link') ?>"><p>Student Login Portal</p></a>
+      </button>
+    </div>
+
+  </div>
+  <!-- <div  class="hr-medium"></div> -->
   <div class="text-center sorting">
 
 

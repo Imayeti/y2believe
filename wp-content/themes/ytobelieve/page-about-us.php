@@ -97,11 +97,12 @@ get_header();
   <?php endwhile; ?>
 
 
-  <p class="text-center ">
+  <div class="text-center ">
     <button class="y2-button" type="button" data-toggle="collapse" data-target="#collapseCoreValues" aria-expanded="false" aria-controls="collapseCoreValues">
-      Our Core Values
+
+      <p>Our Core Values</p>
     </button>
-  </p>
+  </div>
 
 
   <div class="heading-blue-hr-container pt-5">

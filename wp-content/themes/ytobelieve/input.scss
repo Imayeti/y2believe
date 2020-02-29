@@ -149,6 +149,42 @@ img {
 
 
 // END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS // END GLOBALS// END GLOBALS //
+.right-now-media {
+  padding: calc(25px + 2.3vw) 0;
+  margin-bottom: calc(10px + .5vw);
+  background-color: #e5edf7;
+  p{
+    font-size: calc(11px + .24vw);
+    line-height: 1.75;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 calc(33px + .9vw);
+    color: $blue;
+    font-size: calc(11px + .24vw);
+  }
+
+}
+
+.student-login-button {
+  transition: $ease;
+  p {
+    transition: $ease;
+
+    border-radius: 25px;
+    padding: 8.5px calc(10px + .5vw) 4px;
+    display: inline-block;
+    border-radius: 90;
+    border: .5px solid #a0a0a0;
+    font-weight: bold;
+    &:hover {
+      background-color: white;
+      color: black;
+      letter-spacing: 2px;
+    }
+  }
+}
 
 .p-padding {
   padding: 0 20px;
@@ -256,23 +292,28 @@ div[aria-expanded="true"]{
 }
 
 .y2-button {
-  transition: $ease;
-  letter-spacing: 2px;
-  font-weight: bolder;
-  font-size: calc(10px + .5vw);
-  border: 3px solid $lightBlue;
-  border-radius: 25px;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 10px calc(10px + .5vw) 5px;
-  line-height: normal;
-  background-color: $lightBlue;
-  color: white;
-  &:hover {
-    background-color: white;
-    color: black;
-    letter-spacing: 3px;
+  p{
+    transition: $ease;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: calc(10px + .5vw);
+    border: 3px solid $lightBlue;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px calc(10px + .5vw) 5px;
+    line-height: normal;
+    background-color: $lightBlue;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $blue;
+      letter-spacing: 3px;
+    }
   }
+
+
 }
 
 .temp-article {
@@ -546,7 +587,7 @@ div[aria-expanded="true"]{
 }
 .big-p {
   p {
-    font-size: calc(15px + .25vw);
+
     line-height: 1.75;
     font-weight: 400;
     max-width: 800px;
@@ -554,7 +595,7 @@ div[aria-expanded="true"]{
     text-align: center;
     padding: 0 calc(33px + .9vw);
     color: $blue;
-    font-size: calc(11px + .24vw);
+    font-size: calc(11px + .26vw);
 
   }
   font-size: calc(15px + .25vw);
@@ -566,8 +607,8 @@ div[aria-expanded="true"]{
   padding: 0 calc(33px + .9vw);
 }
 .top-paragraph {
-  padding-top:  calc(28px + 4vw);
-  padding-bottom:  calc(15px + 1vw);
+  padding: calc(28px + 4vw) 0  calc(24px + 3vw) 0;
+
   font-size: calc(11px + .24vw);
 
 
