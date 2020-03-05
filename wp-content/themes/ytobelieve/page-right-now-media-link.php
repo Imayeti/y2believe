@@ -12,11 +12,11 @@ if (isset($pass)){
 
         ?>
 
-          <script type="text/javascript">
+          <!-- <script type="text/javascript">
 
             window.location.replace("https://www.rightnowmediaatwork.org/Account/Invite/42f3003e-e3cb-48fd-a41d-1e2aaa4a347a");
 
-          </script>
+          </script> -->
 
         <?php
 
