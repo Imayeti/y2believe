@@ -20,14 +20,11 @@
 
      </div>
 
-
-
      <div class=" text-center address col-12 col-md-3">
        <h6 class="">Y2Believe</h6>
        <p>16295 S Tamiami Trl #195</p>
        <p>Fort Myers, FL 33908</p>
      </div>
-
 
      <div class=" text-center col-12 col-md-3 mobile-margin-top desktop-padding-left">
        <h6 >Contact</h6>

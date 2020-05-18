@@ -1,13 +1,10 @@
 function openNav() {
-
   document.getElementById("mySidenav").style.width = "200px";
-
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-
 }
 
 
@@ -29,10 +26,6 @@ $(document).ready(function() {
     $('.video-tile').show();
     $('.article-tile').show();
   });
-
-
-
-
 
 
 	// Closes the sidebar menu on menu-close button click event
@@ -85,13 +78,4 @@ $(document).ready(function() {
 
 //stop modal from playing video when exited
 
-
-
 $("[id^=myModal]").on('hidden.bs.modal', function (e) { var $this = $(this); var $frame = $this.find('iframe'); $frame.attr("src", $frame.attr("src")); });
-
-
-
-
-
-
-//

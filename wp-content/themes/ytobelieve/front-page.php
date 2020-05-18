@@ -75,14 +75,12 @@ get_header();
 
 
 
-  <section class=" testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-openingV4.jpg')">
-    <div class="red-bg-gradient"></div>
+<section class=" testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-openingV4.jpg')">
+  <div class="red-bg-gradient"></div>
 
-  <?php echo do_shortcode('[testimonial_rotator id=21]'); ?>
+<?php echo do_shortcode('[testimonial_rotator id=21]'); ?>
 
-  </section>
-
-
+</section>
 
 
 
