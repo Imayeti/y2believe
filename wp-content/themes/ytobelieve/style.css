@@ -567,6 +567,11 @@ footer {
     left: 50%;
     transform: translate(-50%); }
 
+.rnm-links a {
+  border: 1px solid #007bff;
+  padding: 3.5px calc(8px + .5vw) 0px;
+  font-size: calc(13px + .3vw); }
+
 #arrows {
   padding: calc(30px + 8vw) calc(20px + 5vw); }
   #arrows img {

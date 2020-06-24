@@ -796,6 +796,14 @@ footer {
   }
 }
 
+.rnm-links {
+  a {
+    border: 1px solid #007bff;
+    padding: 3.5px calc(8px + .5vw) 0px;
+    font-size: calc(13px + .3vw);
+
+  }
+}
 
 
 #arrows {
