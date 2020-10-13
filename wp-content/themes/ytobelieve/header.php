@@ -61,8 +61,6 @@
 	</a>
 
 
-
-
 	<nav id="sidebar-wrapper">
 		<ul class="sidebar-nav">
 			 <a id="menu-close"  href="javascript:void(0)" class="closebtn circle boxShadow" ><div class="outer">
@@ -70,7 +68,6 @@
 
 			 	</div>
 			 </div></a>
-			<!-- <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg toggle"><i class="fa fa-times"></i></a> -->
 
 			<li id="first-li">
 				<a href="<?php site_url() ?>/" title="Go to home">Home</a>

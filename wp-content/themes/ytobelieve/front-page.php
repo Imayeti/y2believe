@@ -43,10 +43,8 @@ get_header();
     <div data-aos-once="true"  data-aos-delay="1000"  data-aos="fade-in"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="500" class="col-12 col-md-6 flip-words vision order-md-1 ">
-    <h5 class="pb-4">Vision</h5>
-    <p>     <?php the_field('vision'); ?></p>
-
-
+      <h5 class="pb-4">Vision</h5>
+      <p>     <?php the_field('vision'); ?></p>
    </div>
   </div>
    <div class="row no-gutters">
@@ -69,16 +67,12 @@ get_header();
       <p>      <?php the_field('mission'); ?></p>
     </div>
   </div>
-
-
 </section>
-
-
 
 <section class=" testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2019/07/Prayer-tent-openingV4.jpg')">
   <div class="red-bg-gradient"></div>
 
-<?php echo do_shortcode('[testimonial_rotator id=21]'); ?>
+  <?php echo do_shortcode('[testimonial_rotator id=21]'); ?>
 
 </section>
 

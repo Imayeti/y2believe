@@ -24,72 +24,58 @@ get_header();
 
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >About Us</h1>
 
-
-
-
 </header>
 
 
 <section id="about-us">
 
   <div class="about-us-text">
-
     <div class="heading-blue-hr-container">
       <div class="hr-full  ">  </div>
         <h2 class="text-center rmy-1 pt-1">OUR MISSION: <br> ENGAGE & EQUIP</h2>
       <div class="hr-full  ">  </div>
     </div>
-
-
     <p class="p-padding"><?php the_field('our_mission'); ?></p>
-
-
-
-  <div class="collapse" id="collapseCoreValues">
-    <div class="card card-body core-values">
+    <div class="collapse" id="collapseCoreValues">
+      <div class="card card-body core-values">
 
     <?php  while ( have_rows('our_core_values') ) : the_row();  ?>
       <p class="opening-p">
         <?php the_sub_field('opening_paragraph'); ?>
       </p>
 
+        <div class="core-value-ps-container">
+         <div class="row">
 
-    <div class="core-value-ps-container">
+            <div class="col-12 core-value-p col-lg-3">
+              <?php the_sub_field('paragraph_one'); ?>
+            </div>
+
+            <div class="col-12 core-value-p col-lg-3">
+              <?php the_sub_field('paragraph_two'); ?>
+            </div>
+            <div class="col-12 core-value-p col-lg-3">
+              <?php the_sub_field('paragraph_three'); ?>
+            </div>
+            <div class="col-12 core-value-p col-lg-3">
+              <?php the_sub_field('paragraph_four'); ?>
+            </div>
+
+        </div>
        <div class="row">
+          <div class="col-12 core-value-p col-lg-3">
+            <?php the_sub_field('paragraph_five'); ?>
+          </div>
 
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_one'); ?>
-              </div>
+          <div class="col-12 core-value-p col-lg-3">
+            <?php the_sub_field('paragraph_six'); ?>
+          </div>
+          <div class="col-12 core-value-p col-lg-3">
+            <?php the_sub_field('paragraph_seven'); ?>
+          </div>
+          <div class="col-12 core-value-p col-lg-3">
 
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_two'); ?>
-              </div>
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_three'); ?>
-              </div>
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_four'); ?>
-              </div>
-
-
-      </div>
-       <div class="row">
-
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_five'); ?>
-              </div>
-
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_six'); ?>
-              </div>
-              <div class="col-12 core-value-p col-lg-3">
-                <?php the_sub_field('paragraph_seven'); ?>
-              </div>
-              <div class="col-12 core-value-p col-lg-3">
-
-              </div>
-
-
+          </div>
         </div>
       </div>
     </div>
