@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2019/12/MB-MG-PR3-2.jpeg')">
+<header class="header-home text-center" style="background-image: url('/wp-content/uploads/2021/03/MB-MG-PR3-2.jpg')">
 
   <div class="header-blue-gradient"></div>
   <div class="header-home-gradient"></div>
