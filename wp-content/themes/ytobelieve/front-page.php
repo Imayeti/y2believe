@@ -21,7 +21,7 @@ get_header();
   <div class="header-home-gradient"></div>
 
 
-  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Discover Evidence <br> Find Truth </h1>
+  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white text" ><?php the_field('header_text_1'); ?> <br> <?php the_field('header_text_2'); ?> </h1>
 
 
   <div class="arrow bounce">
