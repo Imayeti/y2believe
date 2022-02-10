@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_62046a4568821",
+            "label": "Vimeo Video ID",
+            "name": "vimeo_video_id",
+            "type": "text",
+            "instructions": "Just the ID from the video URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5dcb71da5a0a6",
             "label": "Article Link",
             "name": "article_link",
@@ -58,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1576457999
+    "modified": 1644456552
 }
