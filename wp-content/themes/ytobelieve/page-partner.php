@@ -73,7 +73,7 @@ get_header();
 
       <?php if (get_field('youtube_video_id')) : $videoNum++;?>
 
-        <div class="col-12 col-md-6   rmt-4 text-center video-tile">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3   rmt-4 text-center video-tile">
 
           <div class="tile" >
             <div class="mobile-no-show thumbnail-container" style="" data-toggle="modal" data-target="#myModal<?=$videoNum?>"></div>
@@ -102,7 +102,7 @@ get_header();
 
       <?php if (get_field('vimeo_video_id')) : $videoNum++;?>
 
-        <div class="col-12 col-md-6   rmt-4 text-center video-tile">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3   rmt-4 text-center video-tile">
 
           <div class="tile" >
             <div class="mobile-no-show thumbnail-container" style="" data-toggle="modal" data-target="#myModal<?=$videoNum?>"></div>
@@ -135,7 +135,7 @@ get_header();
 
       <?php if (get_field('article_link')) :?>
 
-        <div class="col-12 col-md-6   rmt-4 text-center article-tile">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3  rmt-4 text-center article-tile">
           <div class="tile">
             <a href="<?php the_field('article_link'); ?>" target="_blank" class="mobile-no-show thumbnail-container"  ></a>
             <div class="article-bg-pic" style="background-image: url('<?php the_post_thumbnail_url() ?>');" ></div>
