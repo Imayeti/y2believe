@@ -401,7 +401,7 @@ div[aria-expanded=true] .btn-link {
   background-repeat: no-repeat;
 }
 
-.thumbnail-container {
+.link-cover {
   position: absolute;
   width: 100%;
   height: 100%;

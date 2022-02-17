@@ -137,7 +137,7 @@ get_header();
 
         <div class="col-12 col-md-6 col-lg-4 col-xl-3  rmt-4 text-center article-tile">
           <div class="tile">
-            <a href="<?php the_field('article_link'); ?>" target="_blank" class="mobile-no-show thumbnail-container"  ></a>
+            <a href="<?php the_field('article_link'); ?>" target="_blank" class="link-cover"></a>
             <div class="article-bg-pic" style="background-image: url('<?php the_post_thumbnail_url() ?>');" ></div>
             <h6><?php the_title(); ?></h6>
             <h5 class="blue-text font-weight-bold">Read Article<i class="fas fa-chevron-right"></i></h5>
