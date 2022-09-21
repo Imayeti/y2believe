@@ -94,7 +94,6 @@ get_header();
         <?php the_field('embed'); ?>
 
         <h6><?php the_title(); ?></h6>
-        <h5 class="blue-text font-weight-bold">Watch Video<i class="fas fa-chevron-right"></i></h5>
 
       </div>
 
