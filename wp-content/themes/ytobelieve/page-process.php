@@ -21,7 +21,7 @@ get_header();
 
   <div class="header-gradient"></div>
 
-  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Process</h1>
+  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >Why Y2B</h1>
 
 </header>
 
