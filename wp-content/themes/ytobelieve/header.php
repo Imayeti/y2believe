@@ -76,13 +76,13 @@
 				<a href="<?php site_url() ?>/about-us" title="Go to about us">About Us</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/partner" title="Go to partner section">Partner</a>
+				<a href="<?php site_url() ?>/partner" title="Go to partner section">Boomer: Conversations of Consequence</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/process" title="process">Process</a>
+				<a href="<?php site_url() ?>/process" title="process">Why Y2B</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/evidence" title="evidence">Evidence</a>
+				<a href="<?php site_url() ?>/evidence" title="evidence">Gen Z: Evidence</a>
 			</li>
 
 		</ul>
