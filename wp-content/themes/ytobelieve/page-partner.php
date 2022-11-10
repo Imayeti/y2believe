@@ -60,7 +60,9 @@ get_header();
       $videoNum = 0;
       $args = array(
           'post_type' => 'post',
-          'cat' => 4
+          'cat' => 4,
+          'orderby' => 'title',
+          'order' => 'ASC',
       );
 
       $post_query = new WP_Query($args);
