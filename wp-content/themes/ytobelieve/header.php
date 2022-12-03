@@ -85,7 +85,7 @@
 				<a href="<?php site_url() ?>/evidence" title="evidence">Gen Z: Evidence</a>
 			</li>
             <li>
-                <a href="https://tithe.ly/give_new/www/#/tithely/give-one-time/6424881" title="evidence">Give</a>
+                <a href="https://tithe.ly/give_new/www/#/tithely/give-one-time/6424881" title="give">Give</a>
             </li>
 
 		</ul>
