@@ -20,7 +20,7 @@ get_header();
 
   <div class="header-blue-gradient"></div>
   <div class="header-gradient"></div>
-  <h1 class="text-white evidence_h1" >Gen Z: Evidence</h1>
+  <h1 class="text-white evidence_h1" >Gen Z <br> Evidence</h1>
 
 
 </header>
@@ -72,7 +72,7 @@ get_header();
         while($post_query->have_posts() ) {
           $post_query->the_post();
     ?>
-    
+
     <?php if (get_field('article_link')) :?>
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3 rmt-4 text-center article-tile">
@@ -108,7 +108,7 @@ get_header();
               </div>
 
               <?php the_field('embed'); ?>
-                
+
           </div>
         </div>
       </div>

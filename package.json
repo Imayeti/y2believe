@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sync": "browser-sync start --proxy 'y2believe.local' --files 'wp-content/themes/ytobelieve/'",
     "sass": " sass --watch ./wp-content/themes/ytobelieve/input.scss:./wp-content/themes/ytobelieve/style.css "
-
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }
