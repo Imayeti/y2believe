@@ -47,7 +47,8 @@ get_header();
   margin: 0 auto;
 }
 
-</div>
+</style>
+
 
 <section id="tiled">
 
