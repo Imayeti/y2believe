@@ -28,6 +28,14 @@ get_header();
   <?php the_field('main_text'); ?>
 </div>
 
+
+<div class="wrapper">
+  <div class=" video-container">
+    <?php the_field('featured_video') ?>
+  </div>
+</div>
+
+
 <style>
 
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
@@ -38,8 +46,6 @@ get_header();
   max-width: 900px;
   margin: 0 auto;
 }
-
-</style>
 
 </div>
 
