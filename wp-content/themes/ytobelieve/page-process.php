@@ -83,7 +83,7 @@ get_header();
 
     .wrapper {
         max-width: 900px;
-        margin: 0 auto;
+        margin: 0 auto calc(35px + 3vw);
     }
 
 </style>
