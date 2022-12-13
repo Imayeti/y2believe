@@ -3,6 +3,7 @@
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
+.idea
 
 wp-content/plugins/wordfence/*
 wp-content/plugins/wp-migrate-db/*
