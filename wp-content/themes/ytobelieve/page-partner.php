@@ -28,12 +28,6 @@ get_header();
   <?php the_field('main_text'); ?>
 </div>
 
-
-<!-- <h3 class="text-center" style="margin: 300px;">Coming Soon!</h3>
- -->
-
-
-
 <style>
 
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
