@@ -31,11 +31,7 @@ get_header();
 
 <!-- <h3 class="text-center" style="margin: 300px;">Coming Soon!</h3>
  -->
-<div class="wrapper">
-  <div class=" video-container">
-    <iframe  src="https://www.youtube.com/embed/<?php the_field('featured_video') ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
+
 
 
 <style>

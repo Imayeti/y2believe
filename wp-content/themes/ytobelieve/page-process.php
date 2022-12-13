@@ -67,11 +67,13 @@ get_header();
       </p>
     </div>
   </div>
-
 </section>
 
-
-
+<div class="wrapper">
+    <div class=" video-container">
+        <iframe  src="https://www.youtube.com/embed/<?php the_field('featured_video') ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 <?php
 
