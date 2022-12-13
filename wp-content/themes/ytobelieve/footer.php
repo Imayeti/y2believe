@@ -16,25 +16,28 @@
   </div>
 
    <div class=" info row">
-     <div class="col">
 
-     </div>
 
-     <div class=" text-center address col-12 col-md-3">
-       <h6 class="">Y2Believe</h6>
-       <p>16295 S Tamiami Trl #195</p>
-       <p>Fort Myers, FL 33908</p>
-     </div>
 
-     <div class=" text-center col-12 col-md-3 mobile-margin-top desktop-padding-left">
-       <h6 >Contact</h6>
-       <p><a href="tel:334-569-6026">334-569-6026</a></p>
-       <p><a href="mailto:mbossman@y2believe.org">mbossman@y2believe.org</a></p>
-     </div>
 
-     <div class="col">
+        <div class=" text-center address col-12 col-md-4 order-md-1">
+         <div class="text-center rmb-4 give-button">
+             <a href="https://tithe.ly/give_new/www/#/tithely/give-one-time/6424881"><p>Give</p></a>
+         </div>
+        </div>
 
-     </div>
+        <div class=" text-center address col-12 col-md-4 order-md-2">
+            <h6 class="">Y2Believe</h6>
+            <p>16295 S Tamiami Trl #195</p>
+            <p>Fort Myers, FL 33908</p>
+        </div>
+
+        <div class=" text-center col-12 col-md-4 mobile-margin-top desktop-padding-left">
+            <h6 >Contact</h6>
+            <p><a href="tel:334-569-6026">334-569-6026</a></p>
+            <p><a href="mailto:mbossman@y2believe.org">mbossman@y2believe.org</a></p>
+        </div>
+
 
 
   </div>

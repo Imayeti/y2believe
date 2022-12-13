@@ -183,6 +183,27 @@ img {
   }
 }
 
+.give-button {
+  transition: $ease;
+  p {
+    transition: $ease;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 8.5px calc(10px + .5vw) 4px;
+    display: inline-block;
+    border-radius: 90;
+    border: 2.5px solid #a0a0a0;
+    font-size: calc(16px + 1vw);
+    &:hover {
+      background-color: white;
+      color: black;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+
+
 .p-padding {
   padding: 0 20px;
 }
@@ -1154,6 +1175,10 @@ display:block;
 	    background: transparent !important;
 }
 
+.info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 .outer {
   position: relative;

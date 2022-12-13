@@ -1,9 +1,11 @@
 .node_modules/
+node_modules
 .DS_Store
+.idea/*
+.idea
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
-.idea
 
 wp-content/plugins/wordfence/*
 wp-content/plugins/wp-migrate-db/*

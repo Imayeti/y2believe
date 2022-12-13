@@ -76,13 +76,13 @@
 				<a href="<?php site_url() ?>/about-us" title="Go to about us">About Us</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/partner" title="Go to partner section">Boomer: Conversations of Consequence</a>
+				<a href="<?php site_url() ?>/partner" title="Go to partner section">Boomer <br> Conversations of Consequence</a>
 			</li>
 			<li>
 				<a href="<?php site_url() ?>/process" title="process">Why Y2B</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/evidence" title="evidence">Gen Z: Evidence</a>
+				<a href="<?php site_url() ?>/evidence" title="evidence">Gen Z <br> Evidence</a>
 			</li>
             <li>
                 <a href="https://tithe.ly/give_new/www/#/tithely/give-one-time/6424881" title="give">Give</a>

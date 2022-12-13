@@ -21,6 +21,7 @@ get_header();
   <div class="header-gradient"></div>
   <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"  class="text-white " >Conversations of Consequence</h1>
 
+
 </header>
 
 <div data-aos="fade-in" data-aos-duration="2000" data-aos-once="true" class="partner-text">
