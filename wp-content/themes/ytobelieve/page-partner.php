@@ -126,24 +126,6 @@ get_header();
 
 
 </div>
-<div class="text-center rmt-5">
-<!--        <h2>Additional Resources</h2>-->
-    <?php
-
-    if( have_rows('pdfs') ):
-        while( have_rows('pdfs') ) : the_row();
-            ?>
-            <button class="y2-button" type="button" data-toggle="collapse" data-target="#collapseCoreValues" aria-expanded="false" aria-controls="collapseCoreValues">
-                <a href="<?= get_sub_field('pdf') ?>" target="_blank">
-                    <p><?= get_sub_field('name') ?></p>
-                </a>
-            </button>
-        <?php
-        endwhile;
-    endif;
-
-    ?>
-</div>
 
 </section>
 
