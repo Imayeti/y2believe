@@ -135,8 +135,8 @@ get_header();
              while( have_rows('pdf_upload') ) : the_row();
                ?>
               <button class="y2-button rmt-3" type="button" data-toggle="collapse" data-target="#collapseCoreValues" aria-expanded="false" aria-controls="collapseCoreValues">
-                  <a href="<?= get_field('pdf_file') ?>" target="_blank">
-                      <p><?= get_field('pdf_title') ?></p>
+                  <a href="<?= get_sub_field('pdf_file') ?>" target="_blank">
+                      <p><?= get_sub_field('pdf_title') ?></p>
                   </a>
               </button>
               <?php
