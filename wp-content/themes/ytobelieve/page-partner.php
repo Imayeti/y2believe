@@ -126,6 +126,8 @@ get_header();
 
 
 </div>
+
+
     <div class="text-center rmt-5">
       <?php
 
@@ -143,6 +145,8 @@ get_header();
       
      ?>
     </div>
+
+
 </section>
 
 
