@@ -76,7 +76,7 @@
 				<a href="<?php site_url() ?>/about-us" title="Go to about us">About Us</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/partner" title="Go to partner section">Conversations of Consequence</a>
+				<a href="<?php site_url() ?>/conversations" title="Go to Conversations of Consequence section">Conversations of Consequence</a>
 			</li>
 			<li>
 				<a href="<?php site_url() ?>/process" title="process">Why Y2B</a>
