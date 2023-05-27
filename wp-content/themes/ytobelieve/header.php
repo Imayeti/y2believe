@@ -79,7 +79,7 @@
 				<a href="<?php site_url() ?>/conversations" title="Go to Conversations of Consequence section">Conversations of Consequence</a>
 			</li>
 			<li>
-				<a href="<?php site_url() ?>/process" title="process">Why Y2B</a>
+				<a href="<?php site_url() ?>/purpose" title="purpose">Why Y2B</a>
 			</li>
 			<li>
 				<a href="<?php site_url() ?>/evidence" title="evidence">Gen Z <br> Evidence</a>
