@@ -236,3 +236,59 @@ function register_all_custom_post_types(){
 
 	}
 	add_action('init', 'register_all_custom_post_types');
+
+
+
+	// Add new column to the post table
+function add_post_order_column($columns) {
+    $columns['post_order'] = 'Post Order';
+    return $columns;
+}
+add_filter('manage_posts_columns', 'add_post_order_column');
+
+// Fill custom column with data from custom field
+function show_post_order_column($name) {
+    global $post;
+    if ('post_order' == $name) {
+        $post_order = get_post_meta($post->ID, 'post_order', true);
+        echo $post_order;
+    }
+}
+add_action('manage_posts_custom_column', 'show_post_order_column');
+
+
+// Add custom field to Quick Edit
+function post_order_quick_edit() {
+    // Make sure we are on the correct post type screen
+    global $post_type;
+
+    if ($post_type == 'post') {
+        ?>
+        <fieldset class="inline-edit-col-left">
+            <div class="inline-edit-col">
+                <label>
+                    <span class="title">Post Order</span>
+                    <span class="input-text-wrap"><input type="number" name="post_order" class="ptitle" value=""></span>
+                </label>
+            </div>
+        </fieldset>
+        <?php
+    }
+}
+add_action('quick_edit_custom_box', 'post_order_quick_edit');
+
+
+// Update the custom field from Quick Edit
+function save_post_order_quick_edit($post_id) {
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+        return $post_id;
+    if ($parent_id = wp_is_post_revision($post_id))
+        $post_id = $parent_id;
+    if ('post' != $_POST['post_type'])
+        return $post_id;
+
+    if (isset($_POST['post_order'])) {
+        update_post_meta($post_id, 'post_order', $_POST['post_order']);
+    }
+}
+add_action('save_post', 'save_post_order_quick_edit');

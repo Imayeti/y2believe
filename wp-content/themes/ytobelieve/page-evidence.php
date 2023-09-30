@@ -62,8 +62,23 @@ get_header();
     <?php
       $videoNum = 0;
       $args = array(
-          'post_type' => 'post',
-          'cat' => 5
+        'post_type' => 'post',
+        'cat' => 5,
+        'meta_query' => array(
+          'relation' => 'OR',
+          array(
+              'key' => 'post_order',
+              'compare' => 'EXISTS'
+          ),
+          array(
+              'key' => 'post_order',
+              'compare' => 'NOT EXISTS'
+          )
+        ),
+        'orderby' => array(
+            'meta_value_num' => 'ASC',
+            'date' => 'DESC'
+        )
       );
 
       $post_query = new WP_Query($args);
@@ -137,8 +152,6 @@ get_header();
   <?php wp_reset_query() ?>
 
 </div>
-
-
 
 <div class="text-center rmt-5">
       <?php

@@ -22,7 +22,7 @@ get_header();
 
   <div class="header-gradient"></div>
 
-  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white " >About Us</h1>
+  <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white">About Us</h1>
 
 </header>
 
@@ -32,7 +32,7 @@ get_header();
   <div class="about-us-text">
     <div class="heading-blue-hr-container">
       <div class="hr-full  ">  </div>
-        <h2 class="text-center rmy-1 pt-1">OUR MISSION: <br> ENGAGE & EQUIP</h2>
+        <h2 class="text-center rmy-1 pt-1">OUR MISSION: <br>ENGAGE & EQUIP</h2>
       <div class="hr-full  ">  </div>
     </div>
     <p class="p-padding"><?php the_field('our_mission'); ?></p>
@@ -85,7 +85,6 @@ get_header();
 
   <div class="text-center ">
     <button class="y2-button" type="button" data-toggle="collapse" data-target="#collapseCoreValues" aria-expanded="false" aria-controls="collapseCoreValues">
-
       <p>Our Core Values</p>
     </button>
   </div>
@@ -114,10 +113,8 @@ get_header();
     </div>
     <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-arrow-circle-up"></i>
-      <h4>Scripture is our supreme</h4>
-      <h5>and final authority on all matters it addresses</h5>
-
-
+      <h4>Scripture is supreme</h4>
+      <h5>It is the final authority on all matters it addresses</h5>
     </div>
   </div>
 

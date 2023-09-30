@@ -38,7 +38,7 @@
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 443 300" style="enable-background:new 0 0 443 300; margin-top: calc(-.3px - .7vw); cursor: pointer !important;" xml:space="preserve">
 			<style type="text/css">
-				.bars{fill:#7e99b6; cursor: pointer !important;}
+				.bars{fill:#fafafa; cursor: pointer !important;}
 				.menutxt{fill:#FAFBFB; cursor: pointer !important;}
 			</style>
 			<path class="top bars" d="M436.59,82H149.41c-3.54,0-6.41-2.87-6.41-6.41V38.41c0-3.54,2.87-6.41,6.41-6.41h287.18

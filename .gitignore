@@ -6,6 +6,7 @@ node_modules
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
+wp-content/uploads/*
 
 wp-content/plugins/wordfence/*
 wp-content/plugins/wp-migrate-db/*

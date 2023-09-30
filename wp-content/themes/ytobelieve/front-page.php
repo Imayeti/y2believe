@@ -20,53 +20,46 @@ get_header();
   <div class="header-blue-gradient"></div>
   <div class="header-home-gradient"></div>
 
-
   <h1 data-aos="fade-in" data-aos-duration="2000" class="text-white text" ><?php the_field('header_text_1'); ?> <br> <?php the_field('header_text_2'); ?> </h1>
-
-
-  <div class="arrow bounce">
-    <a class="fas fa-chevron-down fa-2x" href="#arrows"></a>
-  </div>
 
 </header>
 
 
+<section id="arrows" class="row">
+    <div
+        class="col-12 col-md-5 flip-words vision"
+        data-aos-once="true"
+        data-aos-delay="1000"
+        data-aos="fade-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="500">
+          <h5 class="pb-2 pb-md-4">Vision</h5>
 
-<section id="arrows">
-   <div class="row no-gutters">
-
-    <div class="col-12 col-md-6  order-md-2 right-arrow ">
-      <img  class="" data-aos="fade-left"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/redarrow.png" alt="">
-    </div>
-    <div data-aos-once="true"  data-aos-delay="1000"  data-aos="fade-in"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="500" class="col-12 col-md-6 flip-words vision order-md-1 ">
-      <h5 class="pb-4">Vision</h5>
-      <p>     <?php the_field('vision'); ?></p>
+          <p><?php the_field('vision'); ?></p>
    </div>
-  </div>
-   <div class="row no-gutters">
-    <div class="col-12 col-md-6 ">
-      <img  class="left-arrow float-right mobile-no-show" data-aos="fade-right"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/bluearrow.png" alt="">
 
-    </div>
-    <div class="col-12 col-md-6 mobile-show">
-      <img  class="left-arrow float-right " data-aos="fade-right"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out" src="/wp-content/uploads/2019/07/mobilebluearrow.png" alt="">
 
+    <div class="col-12 col-md-2 logo-cont-mid">
+        <div>
+            <img class="float-right mx-auto d-block "
+                 data-aos="flip-up"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+                 src="/wp-content/uploads/2019/11/Y2BgreenBadge1.png">
+        </div>
     </div>
-    <div  data-aos-once="true" data-aos-delay="1300" data-aos="fade-in"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="500" class="col-12 col-md-6 flip-words">
-     <h5 class="pb-4">Mission</h5>
-      <p>      <?php the_field('mission'); ?></p>
+
+    <div
+        class="col-12 col-md-5 flip-words mission"
+        data-aos-once="true"
+        data-aos-delay="1300"
+        data-aos="fade-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="500">
+        <h5 class="pb-2 pb-md-4">Mission</h5>
+
+        <p><?php the_field('mission'); ?></p>
     </div>
-  </div>
 </section>
 
 <section class=" testimonial-pic text-white" style="background-image: url('/wp-content/uploads/2021/03/Prayer-tent-openingV5.jpg')">
@@ -75,8 +68,6 @@ get_header();
   <?php echo do_shortcode('[testimonial_rotator id=21]'); ?>
 
 </section>
-
-
 
 
 <?php

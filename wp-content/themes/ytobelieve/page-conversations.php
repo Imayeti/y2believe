@@ -59,8 +59,21 @@ get_header();
       $args = array(
           'post_type' => 'post',
           'cat' => 4,
-          'orderby' => 'title',
-          'order' => 'ASC',
+          'meta_query' => array(
+            'relation' => 'OR',
+            array(
+                'key' => 'post_order',
+                'compare' => 'EXISTS'
+            ),
+            array(
+                'key' => 'post_order',
+                'compare' => 'NOT EXISTS'
+            )
+          ),
+          'orderby' => array(
+              'meta_value_num' => 'ASC',
+              'date' => 'DESC'
+          )
       );
 
       $post_query = new WP_Query($args);
