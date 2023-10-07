@@ -45,7 +45,7 @@ get_header();
                  data-aos="flip-up"
                  data-aos-duration="1000"
                  data-aos-easing="ease-in-out"
-                 src="/wp-content/uploads/2023/10/logo-large.png">
+                 src="<?php the_field('mission_vision_logo') ?>">
         </div>
     </div>
 
