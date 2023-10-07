@@ -25,7 +25,7 @@ get_header();
 </header>
 
 
-<section id="arrows" class="row">
+<section id="arrows" class="row m-0">
     <div
         class="col-12 col-md-5 flip-words vision"
         data-aos-once="true"
