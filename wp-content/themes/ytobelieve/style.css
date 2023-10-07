@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "sans-avant"; /* Give a unique name to the font */
+  src: url("/wp-content/fonts/ITC Avant Garde Gothic Medium.otf") format("opentype");
+}
 .header-page, .header-home {
   background-size: cover;
   min-height: 100svh;
@@ -8,17 +12,17 @@
 
 a {
   font-size: calc(14px + 0.2vw);
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
 }
 
 body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
   letter-spacing: 3px;
   margin: 0;
 }
@@ -26,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: calc(13px + 0.2vw);
   margin: 0;
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
   line-height: 1.8;
   letter-spacing: 0.5px;
 }
@@ -167,7 +171,7 @@ img {
 .student-login-button p {
   transition: all ease 0.3s;
   border-radius: 25px;
-  padding: 8.5px calc(10px + 0.5vw) 4px;
+  padding: 8.5px calc(10px + 0.5vw);
   display: inline-block;
   border-radius: 90;
   border: 0.5px solid #a0a0a0;
@@ -186,7 +190,7 @@ img {
   transition: all ease 0.3s;
   font-weight: bold;
   border-radius: 25px;
-  padding: 8.5px calc(10px + 0.5vw) 4px;
+  padding: 8.5px calc(10px + 0.5vw);
   display: inline-block;
   border-radius: 90;
   border: 2.5px solid #a0a0a0;
@@ -238,7 +242,7 @@ img {
 }
 .card-header:hover {
   cursor: pointer;
-  background-color: rgb(73, 163, 155);
+  background-color: rgb(133, 217, 208);
 }
 .card-header:hover .btn-link {
   color: white;
@@ -251,7 +255,7 @@ img {
 }
 
 div[aria-expanded=true] {
-  background-color: rgb(73, 163, 155);
+  background-color: rgb(133, 217, 208);
 }
 div[aria-expanded=true] .btn-link {
   color: white;
@@ -304,7 +308,7 @@ div[aria-expanded=true] .btn-link {
   border-radius: 25px;
   display: inline-block;
   margin: 0 auto;
-  padding: 10px calc(10px + 0.5vw) 5px;
+  padding: 10px calc(10px + 0.5vw);
   line-height: normal;
   background-color: rgb(73, 163, 155);
   color: white;
@@ -582,7 +586,7 @@ div[aria-expanded=true] .btn-link {
 }
 
 .sans {
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
 }
 
 .marker-popup img {
@@ -605,16 +609,6 @@ div[aria-expanded=true] .btn-link {
   top: 25px;
   left: 25px;
   width: calc(60px + 3.2vw);
-}
-
-.bounce .fa-chevron-down {
-  transition: all ease 0.3s;
-  color: white;
-  align-self: flex-end;
-}
-.bounce .fa-chevron-down:hover {
-  text-decoration: none;
-  color: #a61832;
 }
 
 .sorting .fa-chevron-down {
@@ -643,23 +637,6 @@ div[aria-expanded=true] .btn-link {
   text-decoration: none;
 }
 
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 footer {
   padding: calc(20px + 2vw) calc(30px + 5vw);
   background-color: #484848;
@@ -689,12 +666,12 @@ footer p {
   justify-content: center;
 }
 .header-home h1 {
-  z-index: 12727;
+  z-index: 1;
   display: inline-block;
-  padding: 12px 10px 0px;
+  padding: 12px 10px;
   border: 3px solid white;
   color: rgba(255, 255, 255, 0.9) !important;
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
   font-weight: bold;
   letter-spacing: 3.5px;
   font-size: calc(20px + 2vw);
@@ -711,7 +688,7 @@ footer p {
   padding: 0 10px;
   z-index: 12755;
   color: rgba(255, 255, 255, 0.9) !important;
-  font-family: "Khula", sans-serif;
+  font-family: "sans-avant", sans-serif;
   font-weight: bold;
   letter-spacing: 3.5px;
   font-size: calc(22px + 2.5vw);
@@ -736,6 +713,7 @@ footer p {
 }
 
 #arrows {
+  width: 100%;
   padding: calc(30px + 8vw) calc(20px + 5vw);
 }
 #arrows img {
@@ -803,6 +781,10 @@ footer p {
   padding: calc(20px + 8vw) calc(40px + 10vw);
 }
 
+.menu-icon path {
+  fill: #ffffff;
+}
+
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -811,7 +793,7 @@ footer p {
   height: 100%;
   margin-right: -250px;
   overflow-y: auto;
-  background: rgb(73, 163, 155);
+  background: #fafafa;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
@@ -838,7 +820,6 @@ footer p {
   font-weight: 800;
   text-transform: uppercase;
   outline: none;
-  margin: calc(5px + 0.4vw) auto;
 }
 
 .sidebar-nav li:before {
@@ -860,84 +841,50 @@ footer p {
   margin-top: calc(50px + 3vw);
 }
 
-.sidebar-nav li:first-child a {
-  color: #fff;
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(2):before {
-  color: #fff;
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(3):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(4):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(5):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(6):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(7):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(8):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(9):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:nth-child(10):before {
-  background-color: rgba(76, 185, 176, 0.9);
-}
-
-.sidebar-nav li:hover:before, .sidebar-nav li.open:hover:before {
-  width: 100%;
-  -webkit-transition: width 0.1s ease-in-out;
-  -moz-transition: width 0.1s ease-in-out;
-  -ms-transition: width 0.1s ease-in-out;
-  transition: width 0.1s ease-in-out;
-}
-
 .sidebar-nav li a {
   display: block;
-  color: white;
+  color: rgb(73, 163, 155);
   text-decoration: none;
-  padding: calc(10px + 0.5vw);
+  padding: calc(30px + 0.5vw);
+  background-color: transparent;
+  font-weight: lighter;
+  border-bottom: 1px solid #cfeeeb;
 }
 
-.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
+.sidebar-nav > .sidebar-brand {
+  height: 44px;
+  font-size: 18px;
+  line-height: 1.43;
+}
+
+.sidebar-nav .dropdown-menu {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #222;
+  box-shadow: none;
 }
 
 #menu-toggle {
+  position: absolute;
+  top: calc(15px + 0.5svw);
+  right: calc(15px + 0.5svw);
   z-index: 801;
-  position: fixed;
-  top: 0;
-  right: 15px;
 }
-#menu-toggle svg {
-  padding: calc(3px + 0.8vw) calc(3px + 0.3vw) calc(3px + 0.3vw) calc(3px + 0.3vw);
-  position: fixed;
-  top: 0;
-  right: 0;
+#menu-toggle img {
   z-index: 1099;
-  background-color: rgb(73, 163, 155);
-  height: calc(40px + 3.5vw);
-  width: calc(50px + 4.5vw);
+  height: calc(30px + 2.5vw);
+  width: calc(40px + 3.5vw);
+  right: calc(8px + 0.5vw);
+}
+#menu-toggle img path {
+  fill: #fff;
+}
+#menu-toggle .internal {
+  position: relative;
 }
 
 #sidebar-wrapper.active {
@@ -950,16 +897,11 @@ footer p {
   transition: all 0.4s ease 0s;
 }
 
-.toggle {
-  margin: calc(10px + 0.5vw);
-}
-
 .menuLink1, .menuLink2, .menuLink3, .menuLink4 {
   display: none;
 }
 
 .sidenav {
-  outline: 10px solid rgb(73, 163, 155);
   white-space: nowrap;
   height: 100%; /* 100% Full-height */
   width: 0px; /* 0 width - change this with JavaScript */
@@ -967,7 +909,7 @@ footer p {
   z-index: 1; /* Stay on top */
   top: 0;
   right: -10px;
-  background-color: rgb(73, 163, 155);
+  background-color: white;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -980,17 +922,16 @@ footer p {
   text-decoration: none;
   font-size: calc(5px + 1.6vh);
   font-weight: 200;
-  color: #f5f5f5;
+  color: black;
   display: block;
   text-transform: uppercase;
   transition: 0.3s ease all;
-  transform: 0.3s ease all;
   min-width: 300px;
   cursor: pointer !important;
 }
 
 .sidnav .main-links a:hover {
-  background-color: rgb(73, 163, 155);
+  background-color: rgb(133, 217, 208);
   cursor: pointer !important;
 }
 
@@ -1016,22 +957,6 @@ footer p {
 
 /* .hamburger {   height: calc(50px + 2.5vw);
    width: calc(50px + 3vw); } */
-.hamburger {
-  padding: calc(5px + 1.5vw) calc(5px + 0.5vw) calc(5px + 0.5vw) calc(3px + 0.3vw);
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1099;
-  background-color: rgba(48, 86, 131, 0.35);
-  height: calc(40px + 3.5vw);
-  width: calc(50px + 4.5vw);
-  transition: all ease 0.5s;
-  /* border-left: 15px solid rgba(36,40,33,0.5); */
-  /* border-bottom: 15px solid rgba(36,40,33,0.5); */
-  display: table;
-  overflow: hidden;
-}
-
 .no-padding-left {
   padding-left: 0;
 }
@@ -1042,14 +967,6 @@ footer p {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav .main-links a:hover, .offcanvas a:focus {
-  color: #e1e1e1;
-  letter-spacing: 0.05em;
-  background-color: rgb(73, 163, 155);
-  transition: all ease 0.3s;
-  cursor: pointer;
-}
-
 /* Position and style the close button (top right corner) */
 .closebtn {
   position: absolute;
@@ -1187,6 +1104,9 @@ footer p {
   }
 }
 @media (max-width: 767px) {
+  #arrows {
+    width: 100%;
+  }
   #arrows .vision {
     padding: calc(20px + 1vw) calc(30px + 1vw);
   }

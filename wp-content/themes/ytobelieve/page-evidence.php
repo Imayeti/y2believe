@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
-<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/12/Michael-with-students.jpg')">
+<header class="header-page text-center" style="background-image: url(<?php the_field('header_image') ?>)">
 
   <div class="header-blue-gradient"></div>
   <div class="header-gradient"></div>

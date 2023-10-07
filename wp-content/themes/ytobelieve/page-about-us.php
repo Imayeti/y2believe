@@ -17,7 +17,7 @@ get_header();
 ?>
 
 
-<header class="header-page text-center" style="background-image: url('/wp-content/uploads/2019/12/Michael-at-Aletheia5.jpg')">
+<header class="header-page text-center" style="background-image: url(<?php the_field('header_image') ?>)">
   <div class="header-blue-gradient"></div>
 
   <div class="header-gradient"></div>
@@ -101,20 +101,20 @@ get_header();
    <div class="row belief-icons">
     <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-bible"></i>
-      <h4>We believe the Bible is</h4>
-      <h5>100% without error</h5>
+      <h4>We believe the Bible</h4>
+      <h5>is 100% without error</h5>
     </div>
     <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-layer-group"></i>
-      <h4>That includes all 66 books</h4>
-      <h5>of the Old & New Testaments</h5>
+      <h4>Old & New Testament </h4>
+      <h5>all 66 books are inspired by God</h5>
 
 
     </div>
     <div class="col-12 col-md-4 mt-4">
       <i class="fas fa-arrow-circle-up"></i>
       <h4>Scripture is supreme</h4>
-      <h5>It is the final authority on all matters it addresses</h5>
+      <h5>and the final authority on all matters it addresses</h5>
     </div>
   </div>
 

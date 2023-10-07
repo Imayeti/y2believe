@@ -292,3 +292,32 @@ function save_post_order_quick_edit($post_id) {
     }
 }
 add_action('save_post', 'save_post_order_quick_edit');
+
+
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+// Allow SVG through WordPress Media Uploader
+function svgs_display_thumbs($response) {
+    if($response['type'] === 'image' && $response['subtype'] === 'svg+xml' && class_exists('SimpleXMLElement'))
+    {
+        try {
+            $path = $response['path'];
+            $svg = new SimpleXMLElement(@file_get_contents($path));
+            $src = $response['url'];
+            $width = (int) $svg['width'];
+            $height = (int) $svg['height'];
+
+            // WordPress. Expectation? Reality.
+            $response['image'] = compact( 'src', 'width', 'height' );
+            $response['thumb'] = compact( 'src', 'width', 'height' );
+        } catch(Exception $e) {}
+    }
+
+    return $response;
+}
+add_filter('wp_prepare_attachment_for_js', 'svgs_display_thumbs', 10, 3);
+
