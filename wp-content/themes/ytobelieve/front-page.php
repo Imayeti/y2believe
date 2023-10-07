@@ -45,7 +45,7 @@ get_header();
                  data-aos="flip-up"
                  data-aos-duration="1000"
                  data-aos-easing="ease-in-out"
-                 src="/wp-content/uploads/2019/11/Y2BgreenBadge1.png">
+                 src="/wp-content/uploads/2023/10/logo-large.png">
         </div>
     </div>
 
