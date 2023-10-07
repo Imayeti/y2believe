@@ -606,9 +606,9 @@ div[aria-expanded=true] .btn-link {
 .header-image .logo {
   z-index: 2147483638;
   position: fixed;
-  top: 25px;
-  left: 25px;
-  width: calc(60px + 3.2vw);
+  top: calc(15px + 0.8vw);
+  left: calc(15px + 0.8vw);
+  width: calc(42px + 3.2vw);
 }
 
 .sorting .fa-chevron-down {
@@ -686,7 +686,7 @@ footer p {
   display: inline-block;
   margin: 25vh auto;
   padding: 0 10px;
-  z-index: 12755;
+  z-index: 5;
   color: rgba(255, 255, 255, 0.9) !important;
   font-family: "sans-avant", sans-serif;
   font-weight: bold;
