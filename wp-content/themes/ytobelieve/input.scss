@@ -494,7 +494,7 @@ div[aria-expanded="true"]{
   height: 100%;
   left: 0;
   background: rgb(73, 163, 155);
-  background: linear-gradient(90deg, rgba(73, 163, 155, 0.6) 100%, rgba(73, 163, 155, 0.534) 100%);
+  background: linear-gradient(90deg, rgba(73, 163, 155, 0.67) 100%, rgba(73, 163, 155, 0.534) 100%);
 
 }
 
@@ -729,8 +729,8 @@ footer {
 
 .social {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .icon-padding {
@@ -738,7 +738,7 @@ footer {
 }
 
 .facebook-padding {
-  padding-left: 10px;
+  padding-left: 18px;
 }
 
 .header-home {

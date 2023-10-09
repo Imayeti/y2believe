@@ -130,7 +130,7 @@ add_action( 'widgets_init', 'ytobelieve_widgets_init' );
  wp_enqueue_script( 'ytobelieve-bootstrap',  'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), '20151215', true );
  wp_enqueue_script( 'ytobelieve-AOS',  'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '20151215', true );
 
- wp_enqueue_script( 'ytobelieve_main_js', get_template_directory_uri() . '/js/ytobelieve.js', array(), microtime(), true );
+ wp_enqueue_script( 'ytobelieve_main_js', get_template_directory_uri() . '/js/ytobelieve-v2.js', array(), microtime(), true );
 
  wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Khula&display=swap');
 
