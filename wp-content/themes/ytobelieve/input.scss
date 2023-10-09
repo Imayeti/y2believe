@@ -494,18 +494,18 @@ div[aria-expanded="true"]{
   height: 100%;
   left: 0;
   background: rgb(73, 163, 155);
-  background: linear-gradient(90deg, rgba(73, 163, 155, 0.8) 100%, rgba(73, 163, 155, 0.534) 100%);
+  background: linear-gradient(90deg, rgba(73, 163, 155, 0.6) 100%, rgba(73, 163, 155, 0.534) 100%);
 
 }
 
-.red-bg-gradient {
+.green-bg-gradient {
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 100%;
   left: 0;
   background: rgb(48,86,131);
-  background: linear-gradient(90deg, rgba(103,38,50,0.8) 100%, rgba(166,24,50,0.5340511204481793) 100%);
+  background: linear-gradient(90deg, rgba(73, 163, 155, 0.6) 100%, rgba(73, 163, 155, 0.534) 100%);
 }
 
 .header-gradient {
@@ -725,6 +725,20 @@ footer {
   p {
     line-height: 1.2;
   }
+}
+
+.social {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.icon-padding {
+
+}
+
+.facebook-padding {
+  padding-left: 10px;
 }
 
 .header-home {
