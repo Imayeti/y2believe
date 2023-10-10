@@ -29,11 +29,8 @@
 
 	<div class="header-image" >
 		<a href="<?php site_url() ?>/">
-					<img class="logo" src="/wp-content/uploads/2023/10/logo-large.png" alt="">
+            <img class="logo" src="/wp-content/uploads/2023/10/Y2Bwhite.png" alt="">
 		</a>
-
-
-
 	</div>
 
 	<a id="menu-toggle" href="#" class=" toggle">

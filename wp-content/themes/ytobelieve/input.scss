@@ -629,7 +629,7 @@ div[aria-expanded="true"]{
 .header-image {
   .logo {
     z-index: 2147483638;
-    position: fixed;
+    position: absolute;
     top: calc(15px + .8vw);
     left: calc(15px + .8vw);
     width: calc(42px + 3.2vw);
@@ -734,7 +734,6 @@ footer {
 }
 
 .footer-social {
-    //align items center
     display: flex;
     align-items: center;
     justify-content: center;
