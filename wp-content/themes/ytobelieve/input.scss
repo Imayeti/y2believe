@@ -565,7 +565,7 @@ div[aria-expanded="true"]{
 }
 
 .p-margin {
-  // color: #0b5784;
+  // color: $blue;
   margin: calc(10px + .5vw) 0;
 }
 .big-p {
@@ -733,6 +733,15 @@ footer {
   right: 20px;
 }
 
+.footer-social {
+    //align items center
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
 .icon-padding {
 
 }
@@ -830,12 +839,12 @@ footer {
 
   .flip-words {
     h5 {
-      color: #0b5784;
+      color: $blue;
       font-weight: bold;
     }
     p{
       max-width: 345px;
-      // color: #0b5784;
+      // color: $blue;
       font-weight: 500;
     }
 

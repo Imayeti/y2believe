@@ -664,6 +664,14 @@ footer p {
   right: 20px;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
 .facebook-padding {
   padding-left: 18px;
 }
@@ -743,7 +751,7 @@ footer p {
   padding: calc(20px + 1vw) calc(30px + 1vw) calc(20px + 1vw) calc(50px + 1vw);
 }
 #arrows .flip-words h5 {
-  color: #0b5784;
+  color: rgb(73, 163, 155);
   font-weight: bold;
 }
 #arrows .flip-words p {
