@@ -4,7 +4,7 @@
 }
 .header-page, .header-home {
   background-size: cover;
-  min-height: 100svh;
+  min-height: 100vh;
   background-attachment: fixed;
   padding: calc(10px + 0.5vw);
   background-repeat: no-repeat;
