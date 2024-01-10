@@ -434,13 +434,12 @@ function createContent(heading, info) {
   function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 26.440823, lng: -81.809980},
-      zoom: 8,
-      disableDefaultUI: false,
-      mapTypeControl: false,
-      gestureHandling: 'cooperative',
-      styles:
-
+        center: {lat: 32.605133, lng: -80.601521},
+        zoom: 4,
+        disableDefaultUI: false,
+        mapTypeControl: false,
+        gestureHandling: 'cooperative',
+        styles:
 
 
       [
