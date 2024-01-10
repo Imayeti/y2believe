@@ -492,7 +492,7 @@ function createContent(heading, info) {
                       "visibility": "on"
                   },
                   {
-                      "color": "#808080"  // Example: setting the road color to grey
+                      "color": "#BFBFBF"  // Example: setting the road color to grey
                   }
               ]
           },
