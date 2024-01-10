@@ -484,14 +484,36 @@ function createContent(heading, info) {
    }
  ]
 },
-{
- "featureType": "road",
- "stylers": [
-   {
-     "visibility": "off"
-   }
- ]
-},
+          {
+              "featureType": "road",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#808080"  // Example: setting the road color to grey
+                  }
+              ]
+          },
+          {
+              "featureType": "road",
+              "elementType": "labels.icon",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.arterial",
+              "elementType": "labels.text",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
 {
  "featureType": "water",
  "elementType": "geometry.fill",
