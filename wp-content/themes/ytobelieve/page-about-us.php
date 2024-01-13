@@ -498,7 +498,7 @@ function createContent(heading, info) {
           },
           {
               "featureType": "road",
-              "elementType": "labels.icon",
+              "elementType": "labels.text",
               "stylers": [
                   {
                       "visibility": "on"
@@ -514,7 +514,26 @@ function createContent(heading, info) {
                   }
               ]
           },
-{
+          {
+              "featureType": "road.highway",
+              "elementType": "labels.text",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.local",
+              "elementType": "labels.text",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+
+          {
  "featureType": "water",
  "elementType": "geometry.fill",
  "stylers": [
