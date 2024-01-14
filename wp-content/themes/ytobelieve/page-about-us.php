@@ -447,7 +447,7 @@ function createContent(heading, info) {
  "elementType": "labels",
  "stylers": [
    {
-     "visibility": "off"
+     "visibility": "on"
    }
  ]
 },
@@ -455,7 +455,7 @@ function createContent(heading, info) {
  "featureType": "administrative.land_parcel",
  "stylers": [
    {
-     "visibility": "off"
+     "visibility": "on"
    }
  ]
 },
@@ -463,7 +463,7 @@ function createContent(heading, info) {
  "featureType": "administrative.neighborhood",
  "stylers": [
    {
-     "visibility": "off"
+     "visibility": "on"
    }
  ]
 },
@@ -471,7 +471,7 @@ function createContent(heading, info) {
  "featureType": "poi.business",
  "stylers": [
    {
-     "visibility": "off"
+     "visibility": "on"
    }
  ]
 },
@@ -480,7 +480,7 @@ function createContent(heading, info) {
  "elementType": "labels.text",
  "stylers": [
    {
-     "visibility": "off"
+     "visibility": "on"
    }
  ]
 },
